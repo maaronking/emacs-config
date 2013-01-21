@@ -7,7 +7,7 @@
 (setq-default use-dialog-box nil)
 
 ; enable single-line scrolling
-(setq scroll-step 1)
+(set 'scroll-step 1)
 (set-scroll-bar-mode `right)
 
 ; enable syntax highlighting
@@ -42,11 +42,108 @@
 ; show column-number in the mode line
 (column-number-mode 1)
 
+; Display size of the buffer.
+(set 'size-indication-mode t)
+
 ; show matching parentheses on mouse over
 (show-paren-mode t)
 
 ; disable emacs toolbar
 (tool-bar-mode -1)
+
+;;; Default to using spaces instead of tabs (customize later as needed).
+(set-default 'indent-tabs-mode nil)
+
+
+;;; ----------------------------------------------------------------------
+;;; Text
+;;; ----------------------------------------------------------------------
+
+;;; Use real TAB characters (not spaces).
+(add-hook 'text-mode-hook
+          '(lambda () (define-key text-mode-map
+                        "\t" 'self-insert-command) ))
+
+
+;;; ----------------------------------------------------------------------
+;;; Conf
+;;; ----------------------------------------------------------------------
+
+;;; Use real TAB characters (not spaces).
+(add-hook 'conf-mode-hook
+          '(lambda () (define-key conf-mode-map
+                        "\t" 'self-insert-command) ))
+
+
+;;; ----------------------------------------------------------------------
+;;; Makefile
+;;; ----------------------------------------------------------------------
+
+;;; Use real TAB characters (not spaces).
+(add-hook 'makefile-mode-hook
+          '(lambda () (define-key makefile-mode-map 
+                        "\t" 'self-insert-command) ))
+
+
+;;; ----------------------------------------------------------------------
+;;; CMake
+;;; ----------------------------------------------------------------------
+
+;(require 'cmake-mode)
+;(set 'auto-mode-alist
+;     (append '(("CMakeLists\\.txt$" . cmake-mode)
+;               ("\\.cmake$" . cmake-mode))
+;             auto-mode-alist))
+
+
+;;; ----------------------------------------------------------------------
+;;; C/C++
+;;; ----------------------------------------------------------------------
+
+(require 'cc-mode)
+(set 'auto-mode-alist
+     (append '(("\\.c$"   . c-mode)
+               ("\\.h$"   . c-mode)
+               ("\\.cpp$" . c++-mode)
+               ("\\.hpp$" . c++-mode)
+               ("\\.ipp$" . c++-mode)
+               ("\\.cc$"  . c++-mode)
+               ("\\.hh$"  . c++-mode)
+               ("\\.C$"   . c++-mode)
+               ("\\.H$"   . c++-mode))
+             auto-mode-alist))
+
+;;; ----------------------------------------------------------------------
+;;; XML
+;;; ----------------------------------------------------------------------
+
+(require 'nxml-mode)
+(set 'auto-mode-alist
+     (append '(("\\.gxl$" . nxml-mode)
+               ("\\.rdf$" . nxml-mode)
+               ("\\.rng$" . nxml-mode)
+               ("\\.svg$" . nxml-mode)
+               ("\\.xml$" . nxml-mode)
+               ("\\.xsl$" . nxml-mode)
+               ("\\.xul$" . nxml-mode))
+             auto-mode-alist))
+
+;;; ======================================================================
+;;; Prevent automatic execution of editor commands embedded within files
+;;; (such commands could be used by a cracker or malicious user).
+;;; This setting is a security feature -- do not remove or change it
+;;; unless you know what you are doing.
+;;; ======================================================================
+(set 'enable-local-variables "ask")
+
+;;; Set the frame's title:
+;;;   %b is the name of the buffer.
+;;;   %+ is the state of the buffer:
+;;;      ("*" if modified, "%" if read only, "-" otherwise.
+;;;       Two of them to emulate the mode line.)
+;;;   %f is the file name.
+(set 'frame-title-format
+     (concat "%b %+%+ " user-login-name "@" system-name))
 
 ; changes the location where backup files are placed. Instead of
 ; being spread out all over the filesystem, they're now placed in one
