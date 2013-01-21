@@ -1,5 +1,6 @@
 *.~
 .emacs.d/cedet*
+.emacs.d/ecb*
 .emacs.d/*.tar
 .emacs.d/*.gz
 .emacs.d/emacs-backups/*

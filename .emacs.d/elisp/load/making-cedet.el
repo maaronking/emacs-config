@@ -18,5 +18,5 @@
 (global-set-key (kbd "C-c G") 'semantic-symref)
 
 ; ECB (Emacs Code Browser) Configuration
-(add-to-list 'load-path "~/.emacs23/ecb-2.40")
+(add-to-list 'load-path "~/.emacs.d/ecb-2.40")
 (require 'ecb-autoloads)
