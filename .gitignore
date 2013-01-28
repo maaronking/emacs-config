@@ -1,4 +1,5 @@
 *.~
+.emacs.d/emacs-24*
 .emacs.d/cedet*
 .emacs.d/ecb*
 .emacs.d/*.tar
