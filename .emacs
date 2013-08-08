@@ -43,11 +43,17 @@
 ; enable cmake-mode
 (load "load/making-cmake.el")
 
+; enable magit
+(load "load/making-magit.el")
+
 ; enable doxymacs-mode
 (load "load/making-doxymacs.el")
 
-; enable ibuffer buffer switching
+; enable ibuffer buffer menu
 (load "load/making-ibuffer.el")
+
+; enable buffer stack and friends
+(load "load/making-bufferstack.el")
 
 ; enable org mode
 (load "load/making-org.el")
@@ -79,6 +85,9 @@
 ; load python functions
 (load "load/making-python.el")
 
+; load haskell-mode (installed using aptitude)
+(load "/usr/share/emacs/site-lisp/haskell-mode/haskell-site-file")
+
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
@@ -101,3 +110,5 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 113 :width normal :foundry "unknown" :family "DejaVu Sans Mono")))))
+(put 'dired-find-alternate-file 'disabled nil)
+(put 'upcase-region 'disabled nil)

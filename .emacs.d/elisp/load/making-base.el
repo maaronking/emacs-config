@@ -100,18 +100,18 @@
 ;;; C/C++
 ;;; ----------------------------------------------------------------------
 
-(require 'cc-mode)
-(set 'auto-mode-alist
-     (append '(("\\.c$"   . c-mode)
-               ("\\.h$"   . c-mode)
-               ("\\.cpp$" . c++-mode)
-               ("\\.hpp$" . c++-mode)
-               ("\\.ipp$" . c++-mode)
-               ("\\.cc$"  . c++-mode)
-               ("\\.hh$"  . c++-mode)
-               ("\\.C$"   . c++-mode)
-               ("\\.H$"   . c++-mode))
-             auto-mode-alist))
+;;(require 'cc-mode)
+;;(set 'auto-mode-alist
+;;     (append '(("\\.c$"   . c-mode)
+;;               ("\\.h$"   . c-mode)
+;;               ("\\.cpp$" . c++-mode)
+;;               ("\\.hpp$" . c++-mode)
+;;               ("\\.ipp$" . c++-mode)
+;;               ("\\.cc$"  . c++-mode)
+;;               ("\\.hh$"  . c++-mode)
+;;               ("\\.C$"   . c++-mode)
+;;               ("\\.H$"   . c++-mode))
+;;             auto-mode-alist))
 
 ;;; ----------------------------------------------------------------------
 ;;; XML

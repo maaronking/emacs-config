@@ -1,0 +1,10 @@
+(require 'buffer-stack)
+(require 'buffer-stack-suppl)
+
+(global-set-key [(f10)] 'buffer-stack-bury)
+(global-set-key [(control f10)] 'buffer-stack-bury-and-kill)
+(global-set-key [(control tab)] 'buffer-stack-up)
+(global-set-key [(f11)] 'buffer-stack-down)
+(global-set-key [(shift f10)] 'buffer-stack-bury-thru-all)
+(global-set-key [(shift f9)] 'buffer-stack-up-thru-all)
+(global-set-key [(shift f11)] 'buffer-stack-down-thru-all)

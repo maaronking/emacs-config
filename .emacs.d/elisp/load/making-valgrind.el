@@ -1,6 +1,6 @@
 ; simple function for using valgrind in emacs
 ;  to allow for jumping into code using valgrind output
-(defun call-valgrind (file)
+(defun valgrind (file)
   (interactive "fEnter file: ")
   (shell-command (concat
 		  "valgrind --leak-check=full " file))

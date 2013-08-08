@@ -25,8 +25,8 @@
   (menu-bar-mode -1)
   (tool-bar-mode -1)
   (scroll-bar-mode -1)
-  (set-face-foreground 'mode-line "gray15")
-  (set-face-background 'mode-line "black")
+  ;(set-face-foreground 'mode-line "gray15")
+  ;(set-face-background 'mode-line "black")
   (auto-fill-mode 1))
 
 ;; (disable)
