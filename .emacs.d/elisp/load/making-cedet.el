@@ -9,7 +9,7 @@
 
 (global-ede-mode 1)
 
-(semantic-load-enable-code-helpers)
+;(semantic-load-enable-code-helpers)
 (global-semantic-tag-folding-mode 1)
 (semantic-add-system-include "/usr/include/boost" 'c++-mode)
 
@@ -17,6 +17,7 @@
 
 ;; ; semantic configuration
 ;; (semantic-load-enable-gaudy-code-helpers) 
+(semantic-load-enable-minimum-features)
 
 ;; 
 ;; ;(global-semantic-mru-bookmark-mode 1)
