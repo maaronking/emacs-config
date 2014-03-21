@@ -91,9 +91,6 @@
 ; load bro-mode
 (load "load/making-bromode.el")
 
-; load pandoc-mode
-(load "load/making-pandoc.el")
-
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
