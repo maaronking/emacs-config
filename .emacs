@@ -43,9 +43,6 @@
 ; enable cmake-mode
 (load "load/making-cmake.el")
 
-; enable magit
-(load "load/making-magit.el")
-
 ; enable doxymacs-mode
 (load "load/making-doxymacs.el")
 
