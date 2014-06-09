@@ -1,23 +1,21 @@
-;; ; CEDET configuration 
-(load-file "~/.emacs.d/cedet-1.1/common/cedet.el")
-
-(require 'eassist)
-(require 'semantic-ia)
-(require 'semantic-gcc)
-(require 'semantic-lex-spp)
-(require 'semantic-decorate-include)
-
-(global-ede-mode 1)
+;;; ; CEDET configuration 
+;(load-file "~/.emacs.d/cedet-1.1/common/cedet.el")
+; 
+;(require 'eassist)
+;(require 'semantic-ia)
+;(require 'semantic-gcc)
+;(require 'semantic-lex-spp)
+;(require 'semantic-decorate-include)
+; 
 
 ;(semantic-load-enable-code-helpers)
-(global-semantic-tag-folding-mode 1)
-(semantic-add-system-include "/usr/include/boost" 'c++-mode)
-
-(global-srecode-minor-mode 1)
-
-;; ; semantic configuration
-;; (semantic-load-enable-gaudy-code-helpers) 
-(semantic-load-enable-minimum-features)
+;(semantic-add-system-include "/usr/include/boost" 'c++-mode)
+; 
+;(global-srecode-minor-mode 1)
+; 
+;;; ; semantic configuration
+;;; (semantic-load-enable-gaudy-code-helpers) 
+;(semantic-load-enable-minimum-features)
 
 ;; 
 ;; ;(global-semantic-mru-bookmark-mode 1)
@@ -101,3 +99,38 @@
 ;; ;                        :file "~/Dev/ccss-protocols/CMakeLists.txt"
 ;; ;                        :system-include-path '("/home/making/Dev/ccss-protocols"
 ;; ;                                               boost-base-directory))))
+
+(load-file "~/Dev/external/cedet/cedet-devel-load.el")
+(load-library "contrib/semantic-tag-folding.el")
+
+(defun do-after-decorate () (semantic-tag-folding-mode t) )
+(add-hook 'semantic-decoration-mode-hook 'do-after-decorate) 
+
+; shortcut for ecb
+(global-set-key (kbd "C-x e") 'ecb-activate)
+
+(semantic-mode 1)
+(require 'semantic/ia)
+(require 'semantic/bovine/c)
+(require 'semantic/bovine/gcc)
+
+; Semantic
+(global-semantic-idle-completions-mode t)
+(global-semantic-decoration-mode t)
+(global-semantic-highlight-func-mode t)
+(global-semantic-show-unmatched-syntax-mode t)
+
+;; CC-mode
+(add-hook 'c-mode-hook '(lambda ()
+        (setq ac-sources (append '(ac-source-semantic) ac-sources))
+        (local-set-key (kbd "RET") 'newline-and-indent)
+        (linum-mode t)
+        (semantic-mode t)))
+
+;; Autocomplete
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories (expand-file-name
+             "~/.emacs.d/elpa/auto-complete-1.4.20110207/dict"))
+(setq ac-comphist-file (expand-file-name
+             "~/.emacs.d/ac-comphist.dat"))
+(ac-config-default)

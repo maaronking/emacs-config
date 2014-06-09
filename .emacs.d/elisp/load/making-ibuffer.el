@@ -1,9 +1,3 @@
-; toggle showing hidden files/directories with dired (M-o)
-(require 'dired-x)
-(setq-default dired-omit-files-p -1)  ; uncomment to change default behavior to hide files
-(setq dired-omit-files
-      (concat dired-omit-files "\\|^\\..+$"))
-
 ; nice buffer switching
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 

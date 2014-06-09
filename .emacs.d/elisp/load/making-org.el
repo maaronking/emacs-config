@@ -14,6 +14,10 @@
 ; set the directory where org files are stored
 (setq org-directory "~/org-files/")
 
+;(set org-catch-invisible-edits 1)
+(global-set-key (kbd "M-RET") 'org-insert-heading-respect-content)
+(setq org-src-fontify-natively t)
+
 ; allow org-babel to evaluate source code for specific languages
 ; FIXME: currently doesnt seem to load properly
 ;(org-babel-do-load-languages

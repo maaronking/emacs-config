@@ -39,6 +39,17 @@
 ; show line-number in the mode line
 (line-number-mode 1)
 
+; display line numbers in the left column in certain modes
+(require 'linum)
+(add-hook 'c++-mode-hook 'linum-mode)
+(add-hook 'c-mode-hook 'linum-mode)
+(add-hook 'python-mode-hook 'linum-mode)
+(add-hook 'lua-mode-hook 'linum-mode)
+(add-hook 'text-mode-hook 'linum-mode)
+(add-hook 'lisp-mode-hook 'linum-mode)
+(add-hook 'emacs-lisp-mode 'linum-mode)
+(add-hook 'markdown-mode-hook 'linum-mode)
+
 ; show column-number in the mode line
 (column-number-mode 1)
 
