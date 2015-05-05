@@ -45,6 +45,7 @@
 		      (mode . reftex-mode)))
 	 ("c/c++" (or (mode . c++-mode)
 		      (mode . c-mode)))
+         ("haskell" (mode . haskell-mode))
 	 ("xml"   (or (mode . nxml-mode)))
 	 ("python"(or (mode . python-mode)))
 	 ("dired" (or (mode . dired-mode))))))

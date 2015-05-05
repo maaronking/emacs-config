@@ -103,10 +103,11 @@
 
 ;; This is the newest!!
 ;;(load-file "~/Dev/external/cedet/cedet-devel-load.el")
-;;(load-library "contrib/semantic-tag-folding.el")
+;(load-library "~/Downloads/cedet-1.0.1/contrib/semantic-tag-folding.el")
 ;; 
-;;(defun do-after-decorate () (semantic-tag-folding-mode t) )
-;;(add-hook 'semantic-decoration-mode-hook 'do-after-decorate) 
+;(global-semantic-decoration-mode t)
+;(defun do-after-decorate () (semantic-tag-folding-mode t) )
+;(add-hook 'semantic-decoration-mode-hook 'do-after-decorate) 
 ;; 
 ;;; shortcut for ecb
 ;;(global-set-key (kbd "C-x e") 'ecb-activate)

@@ -42,6 +42,7 @@
 ; display line numbers in the left column in certain modes
 (require 'linum)
 (add-hook 'c++-mode-hook 'linum-mode)
+(add-hook 'haskell-mode-hook 'linum-mode)
 (add-hook 'c-mode-hook 'linum-mode)
 (add-hook 'python-mode-hook 'linum-mode)
 (add-hook 'lua-mode-hook 'linum-mode)

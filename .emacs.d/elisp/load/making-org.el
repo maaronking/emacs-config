@@ -18,16 +18,23 @@
 (global-set-key (kbd "M-RET") 'org-insert-heading-respect-content)
 (setq org-src-fontify-natively t)
 
-; allow org-babel to evaluate source code for specific languages
-; FIXME: currently doesnt seem to load properly
-;(org-babel-do-load-languages
-;      'org-babel-load-languages
-;      '((emacs-lisp . nil)
-; 	(C . t)
-; 	(python . t)))
-
 ; setup my org-mode hook
 (defun my-org-mode-hook ()
   "Perform these actions when org mode is invoked."
   (setq fill-column 80)
   (auto-fill-mode 1))
+(add-hook 'org-mode-hook 'my-org-mode-hook)
+
+(defun my-org-inline-css-hook (exporter)
+  "Insert custom inline css to automatically set the
+background of code to whatever theme I'm using's background"
+  (when (eq exporter 'html)
+    (let* ((my-pre-bg (face-background 'default))
+           (my-pre-fg (face-foreground 'default)))
+      (setq
+       org-html-head-extra
+       (concat
+        org-html-head-extra
+        (format "<style type=\"text/css\">\n pre.src {background-color: %s; color: %s;}</style>\n"
+                my-pre-bg my-pre-fg))))))
+(add-hook 'org-export-before-processing-hook 'my-org-inline-css-hook)

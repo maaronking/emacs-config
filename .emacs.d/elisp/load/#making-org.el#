@@ -1,0 +1,49 @@
+(require 'org-install)
+
+; With this setup, all files with extension '.org' will be put into Org mode.
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(add-hook 'org-mode-hook 'turn-on-font-lock) ; not needed when global-font-lock-mode is on
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+
+;(setq org-indent-mode 1)
+(setq org-startup-indented 1)
+
+; set the directory where org files are stored
+(setq org-directory "~/org-files/")
+
+;(set org-catch-invisible-edits 1)
+(global-set-key (kbd "M-RET") 'org-insert-heading-respect-content)
+(setq org-src-fontify-natively t)
+
+; setup my org-mode hook
+(defun my-org-mode-hook ()
+  "Perform these actions when org mode is invoked."
+  (setq fill-column 80)
+  (auto-fill-mode 1))
+(add-hook 'org-mode-hook 'my-org-mode-hook)
+
+;
+;
+;; when exporting to html, use sytax highlighting for code blocks
+;(defun my-org-inline-code-css-hook (exporter)
+;  "Insert custom inline css"
+;  (when (eq exporter 'html)
+;    (let ((my-pre-bg (face-background 'default)))
+;         ;((my-pre-fg (face-foreground 'default)))
+;      (setq org-html-head-include-default-style nil)
+;      (setq org-html-head
+            (format "<style type=\"text/css\">\n pre.src { background-color: %s; color: %s; }</style>\n" my-pre-bg "#BEBEBE")))))
+(add-hook 'org-export-before-processing-hook 'my-org-inline-code-css-hook)
+ 
+;; when exporting to html, format look of the results of the code blocks
+;(defun my-org-inline-results-css-hook (exporter)
+;  "Insert custom inline css"
+;  (when (eq exporter 'html)
+;    (let ((my-pre-bg (face-background 'default)))
+;      (setq org-html-head-include-default-style nil)
+;      (setq org-html-head
+;            (format "<style type=\"text/css\">\n pre.src { border-radius: 15px 15px 15px 15px; }</style>\n")))))
+;(add-hook 'org-export-before-processing-hook 'my-org-inline-results-css-hook)
