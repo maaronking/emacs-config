@@ -61,6 +61,9 @@
 ; enable org mode
 (load "load/making-org.el")
 
+; enable neotree
+(load "load/making-neotree.el")
+
 ; enable flymake mode
 (load "load/making-flymake.el")
 
@@ -121,13 +124,14 @@
  '(global-linum-mode nil)
  '(gnus-demon-handlers (quote ((gnus-demon-scan-mail 1 nil) (gnus-demon-scan-and-update 1 nil))))
  '(line-number-mode nil)
+ '(linum-disabled-modes-list (quote (eshell-mode wl-summary-mode compilation-mode org-mode text-mode dired-mode neotree-mode)))
  '(minimap-always-recenter nil)
  '(minimap-display-semantic-overlays nil)
  '(minimap-recenter-type (quote free))
  '(minimap-update-delay 0.8)
  '(minimap-width-fraction 0.2)
  '(neo-smart-open t)
- '(neo-theme (quote nerd))
+ '(neo-theme (quote ascii))
  '(org-agenda-files (quote ("~/org-files/mobile-org/notes.org" "~/org-files/mobile-org/agenda.org")))
  '(org-babel-load-languages (quote ((emacs-lisp . t) (C . t) (haskell . t) (python . t))))
  '(semantic-c-dependency-system-include-path (quote ("/usr/include" "/usr/lib" "/usr/include/boost")))

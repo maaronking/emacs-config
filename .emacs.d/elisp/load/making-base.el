@@ -51,6 +51,8 @@
 (add-hook 'emacs-lisp-mode 'linum-mode)
 (add-hook 'markdown-mode-hook 'linum-mode)
 
+(require 'linum-off)
+
 ; show column-number in the mode line
 (column-number-mode 1)
 
