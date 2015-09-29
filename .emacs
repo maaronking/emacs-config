@@ -104,6 +104,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(circe-network-options (quote (("DuranDuran" :host "durandu.ran.sandia.gov" :port 6667 :channels ("#sandia" "#weasel")))))
  '(column-number-mode t)
  '(compilation-scroll-output t)
  '(cua-mode t nil (cua-base))
@@ -125,6 +126,8 @@
  '(minimap-recenter-type (quote free))
  '(minimap-update-delay 0.8)
  '(minimap-width-fraction 0.2)
+ '(neo-smart-open t)
+ '(neo-theme (quote nerd))
  '(org-agenda-files (quote ("~/org-files/mobile-org/notes.org" "~/org-files/mobile-org/agenda.org")))
  '(org-babel-load-languages (quote ((emacs-lisp . t) (C . t) (haskell . t) (python . t))))
  '(semantic-c-dependency-system-include-path (quote ("/usr/include" "/usr/lib" "/usr/include/boost")))
