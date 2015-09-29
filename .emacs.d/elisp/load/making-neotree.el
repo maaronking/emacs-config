@@ -1,6 +1,6 @@
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
-
+(setq neo-vc-integration '(face char))
 (setq projectile-switch-project-action 'neotree-projectile-action)
 
 (add-hook 'c++-mode-hook 'neotree-show)

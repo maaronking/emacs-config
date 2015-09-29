@@ -130,6 +130,9 @@
  '(minimap-recenter-type (quote free))
  '(minimap-update-delay 0.8)
  '(minimap-width-fraction 0.2)
+ '(neo-auto-indent-point t)
+ '(neo-banner-message nil)
+ '(neo-cwd-line-style (quote text))
  '(neo-smart-open t)
  '(neo-theme (quote ascii))
  '(org-agenda-files (quote ("~/org-files/mobile-org/notes.org" "~/org-files/mobile-org/agenda.org")))
@@ -144,6 +147,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 113 :width normal :foundry "unknown" :family "DejaVu Sans Mono")))))
+ '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 113 :width normal :foundry "unknown" :family "DejaVu Sans Mono"))))
+ '(neo-button-face ((t (:underline nil))))
+ '(neo-dir-link-face ((t (:foreground "DeepSkyBlue"))))
+ '(neo-expand-btn-face ((t (:foreground "SkyBlue"))))
+ '(neo-file-link-face ((t (:foreground "White"))))
+ '(neo-header-face ((t (:foreground "White")))))
 (put 'dired-find-alternate-file 'disabled nil)
 (put 'upcase-region 'disabled nil)
