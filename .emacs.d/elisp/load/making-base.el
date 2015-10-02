@@ -53,6 +53,9 @@
 
 (require 'linum-off)
 
+; show the git gutter
+(require 'git-gutter-fringe)
+
 ; show column-number in the mode line
 (column-number-mode 1)
 
@@ -68,6 +71,8 @@
 ;;; Default to using spaces instead of tabs (customize later as needed).
 (set-default 'indent-tabs-mode nil)
 
+;; Compilation output
+(setq compilation-scroll-output t)
 
 ;;; ----------------------------------------------------------------------
 ;;; Text
@@ -97,17 +102,6 @@
 (add-hook 'makefile-mode-hook
           '(lambda () (define-key makefile-mode-map 
                         "\t" 'self-insert-command) ))
-
-
-;;; ----------------------------------------------------------------------
-;;; CMake
-;;; ----------------------------------------------------------------------
-
-;(require 'cmake-mode)
-;(set 'auto-mode-alist
-;     (append '(("CMakeLists\\.txt$" . cmake-mode)
-;               ("\\.cmake$" . cmake-mode))
-;             auto-mode-alist))
 
 
 ;;; ----------------------------------------------------------------------

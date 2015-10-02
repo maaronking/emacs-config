@@ -100,40 +100,39 @@
 ;; ;                        :system-include-path '("/home/making/Dev/ccss-protocols"
 ;; ;                                               boost-base-directory))))
 
-
 ;; This is the newest!!
-;;(load-file "~/Dev/external/cedet/cedet-devel-load.el")
-;(load-library "~/Downloads/cedet-1.0.1/contrib/semantic-tag-folding.el")
-;; 
+;(load-file "/home/making/Develop/externals/emacs-config/.emacs.d/elisp/modules/cedet-1.1/common/cedet-load.el")
+;(load-library "/home/making/Develop/externals/emacs-config/.emacs.d/elisp/modules/cedet-1.1/semantic-tag-folding.el")
+; 
 ;(global-semantic-decoration-mode t)
 ;(defun do-after-decorate () (semantic-tag-folding-mode t) )
 ;(add-hook 'semantic-decoration-mode-hook 'do-after-decorate) 
-;; 
-;;; shortcut for ecb
-;;(global-set-key (kbd "C-x e") 'ecb-activate)
-;; 
-;;(semantic-mode 1)
-;;(require 'semantic/ia)
-;;(require 'semantic/bovine/c)
-;;(require 'semantic/bovine/gcc)
-;; 
-;;; Semantic
-;;(global-semantic-idle-completions-mode t)
-;;(global-semantic-decoration-mode t)
-;;(global-semantic-highlight-func-mode t)
-;;(global-semantic-show-unmatched-syntax-mode t)
-;; 
-;;;; CC-mode
-;;(add-hook 'c-mode-hook '(lambda ()
-;;        (setq ac-sources (append '(ac-source-semantic) ac-sources))
-;;        (local-set-key (kbd "RET") 'newline-and-indent)
-;;        (linum-mode t)
-;;        (semantic-mode t)))
-;; 
-;;;; Autocomplete
-;;(require 'auto-complete-config)
-;;(add-to-list 'ac-dictionary-directories (expand-file-name
-;;             "~/.emacs.d/elpa/auto-complete-1.4.20110207/dict"))
-;;(setq ac-comphist-file (expand-file-name
-;;             "~/.emacs.d/ac-comphist.dat"))
-;;(ac-config-default)
+; 
+;; shortcut for ecb
+;(global-set-key (kbd "C-x e") 'ecb-activate)
+; 
+;(semantic-mode 1)
+;(require 'semantic/ia)
+;(require 'semantic/bovine/c)
+;(require 'semantic/bovine/gcc)
+; 
+;; Semantic
+;(global-semantic-idle-completions-mode t)
+;(global-semantic-decoration-mode t)
+;(global-semantic-highlight-func-mode t)
+;(global-semantic-show-unmatched-syntax-mode t)
+; 
+;;; CC-mode
+;(add-hook 'c-mode-hook '(lambda ()
+;        (setq ac-sources (append '(ac-source-semantic) ac-sources))
+;        (local-set-key (kbd "RET") 'newline-and-indent)
+;        (linum-mode t)
+;        (semantic-mode t)))
+; 
+;;; Autocomplete
+;(require 'auto-complete-config)
+;(add-to-list 'ac-dictionary-directories (expand-file-name
+;             "~/.emacs.d/elpa/auto-complete-1.4.20110207/dict"))
+;(setq ac-comphist-file (expand-file-name
+;             "~/.emacs.d/ac-comphist.dat"))
+;(ac-config-default)
