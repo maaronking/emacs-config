@@ -1,0 +1,25 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables (list 
+   (semanticdb-table "config.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__WEASELBOARD_CONFIG_HPP__" variable (:constant-flag t) nil [278 304])
+            ("WEASELBOARD_DRIVER_BUFFER" variable (:constant-flag t) nil [414 439]))          
+    :file "config.hpp"
+    :pointmax 523
+    :fsize 522
+    :lastmodtime '(22033 44584 932689 274000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__WEASELBOARD_CONFIG_HPP__")
+          ("WEASELBOARD_DRIVER_BUFFER" . ((number "64" 440 . 442)))
+          )
+
+    )
+   )
+  :file "!home!making!Develop!weaselboard!weaselboard!applications!bus-analysis!include!weaselboard!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

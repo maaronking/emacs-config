@@ -1,0 +1,223 @@
+;; Object Documents/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Documents/"
+  :tables (list 
+   (semanticdb-table "test.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("array" include (:system-flag t) nil [40 56])
+            ("PING_SLOT0_MASK" variable (:constant-flag t) nil [152 167])
+            ("PING_SLOT1_MASK" variable (:constant-flag t) nil [188 203])
+            ("PING_SLOT2_MASK" variable (:constant-flag t) nil [224 239])
+            ("PING_SLOT3_MASK" variable (:constant-flag t) nil [260 275])
+            ("PING_SLOT4_MASK" variable (:constant-flag t) nil [296 311])
+            ("PING_SLOT5_MASK" variable (:constant-flag t) nil [332 347])
+            ("PING_SLOT6_MASK" variable (:constant-flag t) nil [368 383])
+            ("PING_SLOT7_MASK" variable (:constant-flag t) nil [404 419])
+            ("PING_SLOT8_MASK" variable (:constant-flag t) nil [440 455])
+            ("PING_SLOT9_MASK" variable (:constant-flag t) nil [476 491])
+            ("PING_SLOT10_MASK" variable (:constant-flag t) nil [512 528])
+            ("PING_SLOT11_MASK" variable (:constant-flag t) nil [548 564])
+            ("PING_SLOT12_MASK" variable (:constant-flag t) nil [584 600])
+            ("PING_SLOT13_MASK" variable (:constant-flag t) nil [620 636])
+            ("PING_SLOT14_MASK" variable (:constant-flag t) nil [656 672])
+            ("PING_SLOT15_MASK" variable (:constant-flag t) nil [692 708])
+            ("PING_SLOT16_MASK" variable (:constant-flag t) nil [728 744])
+            ("ROLL_CALL_ARRAY_SIZE" variable (:constant-flag t) nil [765 785])
+            ("decode_register" function
+               (:arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [811 823])
+                    ("roll_array" variable
+                       (:reference 1
+                        :type ("std::array" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil)
+                                  ("17"))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [824 857]))                  
+                :type "void")
+                nil [790 3823])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3835 3844])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3845 3858]))                  
+                :type "int")
+                nil [3826 4321]))          
+    :file "test.cpp"
+    :pointmax 4027
+    :fsize 4321
+    :lastmodtime '(22031 9493 7620 34000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PING_SLOT0_MASK" . ((number "0x00000001" 169 . 179)))
+          ("PING_SLOT10_MASK" . ((number "0x00000400" 529 . 539)))
+          ("PING_SLOT3_MASK" . ((number "0x00000008" 277 . 287)))
+          ("PING_SLOT13_MASK" . ((number "0x00002000" 637 . 647)))
+          ("PING_SLOT6_MASK" . ((number "0x00000040" 385 . 395)))
+          ("PING_SLOT16_MASK" . ((number "0x00010000" 745 . 755)))
+          ("PING_SLOT9_MASK" . ((number "0x00000200" 493 . 503)))
+          ("PING_SLOT2_MASK" . ((number "0x00000004" 241 . 251)))
+          ("PING_SLOT12_MASK" . ((number "0x00001000" 601 . 611)))
+          ("PING_SLOT5_MASK" . ((number "0x00000020" 349 . 359)))
+          ("PING_SLOT15_MASK" . ((number "0x00008000" 709 . 719)))
+          ("PING_SLOT8_MASK" . ((number "0x00000100" 457 . 467)))
+          ("PING_SLOT1_MASK" . ((number "0x00000002" 205 . 215)))
+          ("PING_SLOT11_MASK" . ((number "0x00000800" 565 . 575)))
+          ("PING_SLOT4_MASK" . ((number "0x00000010" 313 . 323)))
+          ("PING_SLOT14_MASK" . ((number "0x00004000" 673 . 683)))
+          ("ROLL_CALL_ARRAY_SIZE" . ((number "17" 786 . 788)))
+          ("PING_SLOT7_MASK" . ((number "0x00000080" 421 . 431)))
+          )
+
+    )
+   (semanticdb-table "bus-analysis-policies.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("chrono" include (:system-flag t) nil [507 524])
+            ("thread" include (:system-flag t) nil [525 542])
+            ("vector" include (:system-flag t) nil [543 560])
+            ("fstream" include (:system-flag t) nil [561 579])
+            ("cstdint" include (:system-flag t) nil [580 598])
+            ("cstdlib" include (:system-flag t) nil [599 617])
+            ("stdlib.h" include (:system-flag t) nil [641 660])
+            ("stdio.h" include (:system-flag t) nil [661 679])
+            ("string.h" include (:system-flag t) nil [680 699])
+            ("netdb.h" include (:system-flag t) nil [700 718])
+            ("fcntl.h" include (:system-flag t) nil [719 737])
+            ("unistd.h" include (:system-flag t) nil [738 757])
+            ("qp_port.h" include (:system-flag t) nil [777 797])
+            ("weaselboard/config/config.hpp" include (:system-flag t) nil [826 866])
+            ("weaselboard/analyzer/analysis-core-aos.hpp" include (:system-flag t) nil [867 920])
+            ("__WEASELBOARD_ROLL_CALL_POLICY_HPP__" variable (:constant-flag t) nil [975 1011])
+            ("PING_SLOT0_MASK" variable (:constant-flag t) nil [1107 1122])
+            ("PING_SLOT1_MASK" variable (:constant-flag t) nil [1143 1158])
+            ("PING_SLOT2_MASK" variable (:constant-flag t) nil [1179 1194])
+            ("PING_SLOT3_MASK" variable (:constant-flag t) nil [1215 1230])
+            ("PING_SLOT4_MASK" variable (:constant-flag t) nil [1251 1266])
+            ("PING_SLOT5_MASK" variable (:constant-flag t) nil [1287 1302])
+            ("PING_SLOT6_MASK" variable (:constant-flag t) nil [1323 1338])
+            ("PING_SLOT7_MASK" variable (:constant-flag t) nil [1359 1374])
+            ("PING_SLOT8_MASK" variable (:constant-flag t) nil [1395 1410])
+            ("PING_SLOT9_MASK" variable (:constant-flag t) nil [1431 1446])
+            ("PING_SLOT10_MASK" variable (:constant-flag t) nil [1467 1483])
+            ("PING_SLOT11_MASK" variable (:constant-flag t) nil [1503 1519])
+            ("PING_SLOT12_MASK" variable (:constant-flag t) nil [1539 1555])
+            ("PING_SLOT13_MASK" variable (:constant-flag t) nil [1575 1591])
+            ("PING_SLOT14_MASK" variable (:constant-flag t) nil [1611 1627])
+            ("PING_SLOT15_MASK" variable (:constant-flag t) nil [1647 1663])
+            ("PING_SLOT16_MASK" variable (:constant-flag t) nil [1683 1699])
+            ("ROLL_CALL_ARRAY_SIZE" variable (:constant-flag t) nil [1720 1740])
+            ("weaselboard" type
+               (:members 
+                  ( ("driver" type
+                       (:members 
+                          ( ("ifpolicy" type
+                               (:members 
+                                  ( ("std::vector" using (:type ("std::vector" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [1822 1840])
+                                    ("std::uint8_t" using (:type ("std::uint8_t" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [1847 1866])
+                                    ("ab_logix_1756_roll_call" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2020 2027])
+                                            ("ab_logix_1756_roll_call" function
+                                               (:constructor-flag t
+                                                :type ("ab_logix_1756_roll_call" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2036 3838])
+                                            ("ab_logix_1756_roll_call" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3848 4243])
+                                            ("apply" function
+                                               (:arguments 
+                                                  ( ("buf" variable
+                                                       (:pointer 1
+                                                        :type ("uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4266 4280]))                                                  
+                                                :type ("size_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4253 4849])
+                                            ("private" label nil (reparse-symbol classsubparts) [5049 5057])
+                                            ("decode_register" function
+                                               (:arguments 
+                                                  ( ("input" variable
+                                                       (:pointer 1
+                                                        :type "char")
+                                                        (reparse-symbol arg-sub-list) [5088 5100])
+                                                    ("roll_array" variable
+                                                       (:reference 1
+                                                        :type ("std::array" type
+                                                             (:template-specifier 
+                                                                ( ("bool" type nil nil nil)
+                                                                  ("17"))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [5101 5134]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5067 8750])
+                                            ("cint_cap_ctrl" variable (:type "int") (reparse-symbol classsubparts) [8760 8778])
+                                            ("cint_ping_call_src_one" variable (:type "int") (reparse-symbol classsubparts) [8866 8893])
+                                            ("cint_ping_call_src_two" variable (:type "int") (reparse-symbol classsubparts) [8987 9014])
+                                            ("cint_ping_call_dst_one" variable (:type "int") (reparse-symbol classsubparts) [9108 9135])
+                                            ("cint_ping_call_dst_two" variable (:type "int") (reparse-symbol classsubparts) [9233 9260])
+                                            ("cint_msg_call_src_one" variable (:type "int") (reparse-symbol classsubparts) [9359 9385])
+                                            ("cint_msg_call_src_two" variable (:type "int") (reparse-symbol classsubparts) [9482 9508])
+                                            ("roll_call_reg_value" variable
+                                               (:dereference 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [9608 9640])
+                                            ("capture_interface_active" variable (:type "bool") (reparse-symbol classsubparts) [9650 9680]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1975 9689]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1794 9696]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1771 9722]))                  
+                :type "namespace")
+                nil [1745 9744]))          
+    :file "bus-analysis-policies.cpp"
+    :pointmax 9821
+    :fsize 9820
+    :lastmodtime '(22037 40898 0 0)
+    :unmatched-syntax '((punctuation 5040 . 5041) (DELETE 5034 . 5040) (punctuation 5032 . 5033) (semantic-list 4998 . 5031) (punctuation 4997 . 4998) (OPERATOR 4989 . 4997) (punctuation 4987 . 4988) (symbol 4964 . 4987) (punctuation 4954 . 4955) (DELETE 4948 . 4954) (punctuation 4946 . 4947) (semantic-list 4912 . 4945) (symbol 4889 . 4912))
+    :lexical-table 
+        '(("PING_SLOT0_MASK" . ((number "0x00000001" 1124 . 1134)))
+          ("PING_SLOT10_MASK" . ((number "0x00000400" 1484 . 1494)))
+          ("PING_SLOT3_MASK" . ((number "0x00000008" 1232 . 1242)))
+          ("PING_SLOT13_MASK" . ((number "0x00002000" 1592 . 1602)))
+          ("PING_SLOT6_MASK" . ((number "0x00000040" 1340 . 1350)))
+          ("PING_SLOT16_MASK" . ((number "0x00010000" 1700 . 1710)))
+          ("PING_SLOT9_MASK" . ((number "0x00000200" 1448 . 1458)))
+          ("PING_SLOT2_MASK" . ((number "0x00000004" 1196 . 1206)))
+          ("PING_SLOT12_MASK" . ((number "0x00001000" 1556 . 1566)))
+          ("PING_SLOT5_MASK" . ((number "0x00000020" 1304 . 1314)))
+          ("PING_SLOT15_MASK" . ((number "0x00008000" 1664 . 1674)))
+          ("PING_SLOT8_MASK" . ((number "0x00000100" 1412 . 1422)))
+          ("__WEASELBOARD_ROLL_CALL_POLICY_HPP__")
+          ("PING_SLOT1_MASK" . ((number "0x00000002" 1160 . 1170)))
+          ("PING_SLOT11_MASK" . ((number "0x00000800" 1520 . 1530)))
+          ("PING_SLOT4_MASK" . ((number "0x00000010" 1268 . 1278)))
+          ("PING_SLOT14_MASK" . ((number "0x00004000" 1628 . 1638)))
+          ("ROLL_CALL_ARRAY_SIZE" . ((number "17" 1741 . 1743)))
+          ("PING_SLOT7_MASK" . ((number "0x00000080" 1376 . 1386)))
+          )
+
+    )
+   )
+  :file "!home!making!Documents!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,3150 @@
+;; Object kmod/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "kmod/"
+  :tables (list 
+   (semanticdb-table "xilinx_fpga.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("linux/cdev.h" include (:system-flag t) nil [363 386])
+            ("linux/clk.h" include (:system-flag t) nil [387 409])
+            ("linux/dma-mapping.h" include (:system-flag t) nil [410 440])
+            ("linux/fs.h" include (:system-flag t) nil [441 462])
+            ("linux/init.h" include (:system-flag t) nil [463 486])
+            ("linux/interrupt.h" include (:system-flag t) nil [487 515])
+            ("linux/io.h" include (:system-flag t) nil [516 537])
+            ("linux/ioport.h" include (:system-flag t) nil [538 563])
+            ("linux/kernel.h" include (:system-flag t) nil [564 589])
+            ("linux/module.h" include (:system-flag t) nil [590 615])
+            ("linux/mutex.h" include (:system-flag t) nil [616 640])
+            ("linux/of.h" include (:system-flag t) nil [641 662])
+            ("linux/platform_device.h" include (:system-flag t) nil [663 697])
+            ("linux/slab.h" include (:system-flag t) nil [698 721])
+            ("linux/string.h" include (:system-flag t) nil [722 747])
+            ("linux/sysctl.h" include (:system-flag t) nil [748 773])
+            ("linux/types.h" include (:system-flag t) nil [774 798])
+            ("linux/uaccess.h" include (:system-flag t) nil [799 825])
+            ("linux/delay.h" include (:system-flag t) nil [826 850])
+            ("DRIVER_NAME" variable (:constant-flag t) nil [860 871])
+            ("XFPGA_DEVICES" variable (:constant-flag t) nil [890 903])
+            ("DEFINE_MUTEX" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("xfpga_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1054 1066]))                  
+                :type "int")
+                nil [1034 1067])
+            ("NUM_KERNEL_BUFS" variable (:constant-flag t) nil [1077 1092])
+            ("GINT_REV" variable (:constant-flag t) nil [1163 1171])
+            ("GINT_CNTRL" variable (:constant-flag t) nil [1221 1231])
+            ("GINT_IER" variable (:constant-flag t) nil [1279 1287])
+            ("GINT_ISR" variable (:constant-flag t) nil [1337 1345])
+            ("CINT_TESTPAT" variable (:constant-flag t) nil [1426 1438])
+            ("CINT_CAP_CTRL" variable (:constant-flag t) nil [1492 1505])
+            ("CINT_CAP_STA" variable (:constant-flag t) nil [1558 1570])
+            ("CINT_TIMEOUT" variable (:constant-flag t) nil [1624 1636])
+            ("CINT_DELAY_VAL" variable (:constant-flag t) nil [1690 1704])
+            ("CINT_BYTES_TX" variable (:constant-flag t) nil [1756 1769])
+            ("CINT_EMU_CTRL" variable (:constant-flag t) nil [1823 1836])
+            ("CINT_BUS_STATS_XFER" variable (:constant-flag t) nil [1890 1909])
+            ("CINT_BUS_STATS_BYTE" variable (:constant-flag t) nil [1956 1975])
+            ("CINT_BUS_STATS_INTG" variable (:constant-flag t) nil [2022 2041])
+            ("CINT_BUS_STATS_XMAX" variable (:constant-flag t) nil [2088 2107])
+            ("CINT_BUS_STATS_BMAX" variable (:constant-flag t) nil [2154 2173])
+            ("CINT_BUS_SLOT_ID" variable (:constant-flag t) nil [2220 2236])
+            ("CINT_FP_CTRL" variable (:constant-flag t) nil [2307 2319])
+            ("CINT_FP_FIELD_LEN1" variable (:constant-flag t) nil [2374 2392])
+            ("CINT_FP_FIELD_FLAGS_HIGH1" variable (:constant-flag t) nil [2441 2466])
+            ("CINT_FP_FIELD_FLAGS_LOW1" variable (:constant-flag t) nil [2508 2532])
+            ("CINT_FP_FIELD_PRIORITY1" variable (:constant-flag t) nil [2575 2598])
+            ("CINT_FP_FIELD_SRC_ADDR1" variable (:constant-flag t) nil [2642 2665])
+            ("CINT_FP_FIELD_DEST1" variable (:constant-flag t) nil [2709 2728])
+            ("CINT_FP_FIELD_TYPE1" variable (:constant-flag t) nil [2776 2795])
+            ("CINT_FP_FIELD_CBID1" variable (:constant-flag t) nil [2843 2862])
+            ("CINT_FP_FIELD_LEN2" variable (:constant-flag t) nil [2911 2929])
+            ("CINT_FP_FIELD_FLAGS_HIGH2" variable (:constant-flag t) nil [2978 3003])
+            ("CINT_FP_FIELD_FLAGS_LOW2" variable (:constant-flag t) nil [3045 3069])
+            ("CINT_FP_FIELD_PRIORITY2" variable (:constant-flag t) nil [3112 3135])
+            ("CINT_FP_FIELD_SRC_ADDR2" variable (:constant-flag t) nil [3179 3202])
+            ("CINT_FP_FIELD_DEST2" variable (:constant-flag t) nil [3246 3265])
+            ("CINT_FP_FIELD_TYPE2" variable (:constant-flag t) nil [3313 3332])
+            ("CINT_FP_FIELD_CBID2" variable (:constant-flag t) nil [3380 3399])
+            ("CINT_FP_FIELD_LEN3" variable (:constant-flag t) nil [3448 3466])
+            ("CINT_FP_FIELD_FLAGS_HIGH3" variable (:constant-flag t) nil [3515 3540])
+            ("CINT_FP_FIELD_FLAGS_LOW3" variable (:constant-flag t) nil [3582 3606])
+            ("CINT_FP_FIELD_PRIORITY3" variable (:constant-flag t) nil [3649 3672])
+            ("CINT_FP_FIELD_SRC_ADDR3" variable (:constant-flag t) nil [3716 3739])
+            ("CINT_FP_FIELD_DEST3" variable (:constant-flag t) nil [3783 3802])
+            ("CINT_FP_FIELD_TYPE3" variable (:constant-flag t) nil [3850 3869])
+            ("CINT_FP_FIELD_CBID3" variable (:constant-flag t) nil [3917 3936])
+            ("CINT_ROLL_CALL_STATUS" variable (:constant-flag t) nil [4018 4039])
+            ("CINT_PING_CALL_SRC_ONE" variable (:constant-flag t) nil [4085 4107])
+            ("CINT_PING_CALL_SRC_TWO" variable (:constant-flag t) nil [4151 4173])
+            ("CINT_PING_CALL_DST_ONE" variable (:constant-flag t) nil [4217 4239])
+            ("CINT_PING_CALL_DST_TWO" variable (:constant-flag t) nil [4283 4305])
+            ("CINT_MSG_CALL_SRC_ONE" variable (:constant-flag t) nil [4350 4371])
+            ("CINT_MSG_CALL_SRC_TWO" variable (:constant-flag t) nil [4416 4437])
+            ("DMVR_ID" variable (:constant-flag t) nil [4506 4513])
+            ("DMVR_CNTRL" variable (:constant-flag t) nil [4564 4574])
+            ("DMVR_S2MM" variable (:constant-flag t) nil [4622 4631])
+            ("DMVR_MM2S" variable (:constant-flag t) nil [4680 4689])
+            ("DMVR_BUF_INFO" variable (:constant-flag t) nil [4738 4751])
+            ("DMVR_BUF_LS" variable (:constant-flag t) nil [4796 4807])
+            ("DMVR_BUF_MS" variable (:constant-flag t) nil [4854 4865])
+            ("DMVR_TEST" variable (:constant-flag t) nil [4912 4921])
+            ("DMVR_BUFF0_ADDR" variable (:constant-flag t) nil [4970 4985])
+            ("xfpga_drvdata" type
+               (:members 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5511 5530])
+                    ("cdev" variable (:type ("cdev" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5533 5550])
+                    ("devt" variable (:type ("dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5553 5564])
+                    ("" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol classsubparts) [5581 5587])
+                    ("lock" variable (:type ("spinlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5590 5606])
+                    ("gint_baddress" variable
+                       (:pointer 1
+                        :type ("__iomem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5615 5638])
+                    ("cint_baddress" variable
+                       (:pointer 1
+                        :type ("__iomem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5646 5669])
+                    ("dmvr_baddress" variable
+                       (:pointer 1
+                        :type ("__iomem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5677 5700])
+                    ("lbus_irq" variable (:type "int") (reparse-symbol classsubparts) [5704 5717])
+                    ("err_irq" variable (:type "int") (reparse-symbol classsubparts) [5720 5732])
+                    ("bdone_irq" variable (:type "int") (reparse-symbol classsubparts) [5735 5749])
+                    ("adone_irq" variable (:type "int") (reparse-symbol classsubparts) [5752 5766])
+                    ("dmvr_err_irq" variable (:type "int") (reparse-symbol classsubparts) [5769 5786])
+                    ("bdone" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5790 5805])
+                    ("adone" variable (:type "int") (reparse-symbol classsubparts) [5808 5818])
+                    ("dmvr_err" variable (:type "int") (reparse-symbol classsubparts) [5821 5834])
+                    ("dmvr_buffer_reg" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5838 5863])
+                    ("error_status" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5867 5893])
+                    ("sem" variable (:type ("mutex" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5896 5913])
+                    ("is_open" variable (:type "bool") (reparse-symbol classsubparts) [5916 5929])
+                    ("Bytes2Tx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5933 5951])
+                    ("lbuf" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5954 5970])
+                    ("lbuf_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5973 5992])
+                    ("kbuf" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5995 6028])
+                    ("kbuf_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6031 6050])
+                    ("dma_addr" variable
+                       (:dereference 1
+                        :type ("dma_addr_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6053 6090])
+                    ("lastread_fpga" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6094 6117])
+                    ("lastread_kernel" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6120 6145]))                  
+                :type "struct")
+                nil [5486 6149])
+            ("xfpga_writereg" variable (:constant-flag t) nil [6201 6215])
+            ("xfpga_readreg" variable (:constant-flag t) nil [6257 6270])
+            ("xfpga_irq_lbus" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [6331 6339])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6340 6351]))                  
+                :type ("irqreturn_t" type (:type "class") nil nil))
+                nil [6297 6697])
+            ("xfpga_irq_err" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [6732 6740])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6741 6752]))                  
+                :type ("irqreturn_t" type (:type "class") nil nil))
+                nil [6699 7098])
+            ("xfpga_irq_bdone" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [7325 7333])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7334 7345]))                  
+                :type ("irqreturn_t" type (:type "class") nil nil))
+                nil [7290 8437])
+            ("xfpga_irq_adone" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [8665 8673])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8674 8685]))                  
+                :type ("irqreturn_t" type (:type "class") nil nil))
+                nil [8630 9284])
+            ("xfpga_irq_dmvr_err" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [9515 9523])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9524 9535]))                  
+                :type ("irqreturn_t" type (:type "class") nil nil))
+                nil [9477 9828])
+            ("xfpga_write" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10131 10149])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10150 10169])
+                    ("" variable (:type ("buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10169 10173])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10174 10187])
+                    ("ppos" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10192 10205]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [10104 11437])
+            ("xfpga_read" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11723 11741])
+                    ("__user" variable (:type "char") (reparse-symbol arg-sub-list) [11742 11755])
+                    ("" variable (:type ("buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11755 11759])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11760 11773])
+                    ("ppos" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11774 11787]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [11697 13125])
+            ("xfpga_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13345 13365])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13366 13384]))                  
+                :type "int")
+                nil [13323 19700])
+            ("xfpga_release" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19913 19933])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19934 19952]))                  
+                :type "int")
+                nil [19888 21653])
+            ("xfpga_fops" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [21655 21828])
+            ("gint_rev_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21859 21878])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21879 21909])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21910 21920]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [21830 22048])
+            ("gint_cntrl_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22081 22100])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22101 22131])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22132 22142]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [22050 22272])
+            ("gint_cntrl_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22306 22325])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22326 22356])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22357 22373])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22374 22385]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [22274 22612])
+            ("gint_ier_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22643 22662])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22663 22693])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22694 22704]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [22614 22832])
+            ("gint_isr_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22863 22882])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22883 22913])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22914 22924]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [22834 23052])
+            ("cint_testpat_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23087 23106])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23107 23137])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23138 23148]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [23054 23280])
+            ("cint_testpat_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23316 23335])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23336 23366])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23367 23383])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23384 23395]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [23282 23624])
+            ("cint_cap_ctrl_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23660 23679])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23680 23710])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23711 23721]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [23626 23854])
+            ("cint_cap_ctrl_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23891 23910])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23911 23941])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23942 23958])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23959 23970]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [23856 24311])
+            ("cint_cap_sta_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24346 24365])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24366 24396])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24397 24407]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [24313 24539])
+            ("cint_cap_sta_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24575 24594])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24595 24625])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24626 24642])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24643 24654]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [24541 24883])
+            ("cint_timeout_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24918 24937])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24938 24968])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24969 24979]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [24885 25111])
+            ("cint_timeout_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25147 25166])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25167 25197])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25198 25214])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25215 25226]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [25113 25455])
+            ("cint_delay_val_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25492 25511])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25512 25542])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25543 25553]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [25457 25687])
+            ("cint_delay_val_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25725 25744])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25745 25775])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25776 25792])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25793 25804]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [25689 26035])
+            ("cint_bytes_tx_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26071 26090])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26091 26121])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26122 26132]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [26037 26265])
+            ("cint_emu_ctrl_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26301 26320])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26321 26351])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26352 26362]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [26267 26495])
+            ("cint_bus_stats_xfer_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26537 26556])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26557 26587])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26588 26598]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [26497 26737])
+            ("cint_bus_stats_byte_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26779 26798])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26799 26829])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26830 26840]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [26739 26979])
+            ("cint_bus_stats_intg_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27021 27040])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27041 27071])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27072 27082]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [26981 27221])
+            ("cint_bus_stats_xmax_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27263 27282])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27283 27313])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27314 27324]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [27223 27463])
+            ("cint_bus_stats_bmax_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27505 27524])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27525 27555])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27556 27566]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [27465 27705])
+            ("cint_bus_slot_id_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27744 27763])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27764 27794])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27795 27805]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [27707 27941])
+            ("cint_fp_ctrl_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27976 27995])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27996 28026])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28027 28037]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [27943 28169])
+            ("cint_fp_field_len1_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28209 28228])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28229 28259])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28260 28270]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [28170 28408])
+            ("cint_fp_field_flags_high1_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28455 28474])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28475 28505])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28506 28516]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [28409 28661])
+            ("cint_fp_field_flags_low1_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28707 28726])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28727 28757])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28758 28768]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [28662 28912])
+            ("cint_fp_field_priority1_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28957 28976])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28977 29007])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29008 29018]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [28913 29161])
+            ("cint_fp_field_src_addr1_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29206 29225])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29226 29256])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29257 29267]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [29162 29410])
+            ("cint_fp_field_dest1_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29451 29470])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29471 29501])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29502 29512]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [29411 29651])
+            ("cint_fp_field_type1_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29692 29711])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29712 29742])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29743 29753]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [29652 29892])
+            ("cint_fp_field_cbid1_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29933 29952])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29953 29983])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29984 29994]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [29893 30133])
+            ("cint_fp_field_len2_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30174 30193])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30194 30224])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30225 30235]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [30135 30373])
+            ("cint_fp_field_flags_high2_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30421 30440])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30441 30471])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30472 30482]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [30375 30627])
+            ("cint_fp_field_flags_low2_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30674 30693])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30694 30724])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30725 30735]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [30629 30879])
+            ("cint_fp_field_priority2_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30925 30944])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30945 30975])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30976 30986]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [30881 31129])
+            ("cint_fp_field_src_addr2_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31175 31194])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31195 31225])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31226 31236]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [31131 31379])
+            ("cint_fp_field_dest2_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31421 31440])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31441 31471])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31472 31482]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [31381 31621])
+            ("cint_fp_field_type2_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31663 31682])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31683 31713])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31714 31724]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [31623 31863])
+            ("cint_fp_field_cbid2_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31905 31924])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31925 31955])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31956 31966]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [31865 32105])
+            ("cint_fp_field_len3_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32146 32165])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32166 32196])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32197 32207]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [32107 32345])
+            ("cint_fp_field_flags_high3_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32393 32412])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32413 32443])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32444 32454]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [32347 32599])
+            ("cint_fp_field_flags_low3_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32646 32665])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32666 32696])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32697 32707]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [32601 32851])
+            ("cint_fp_field_priority3_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32897 32916])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32917 32947])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32948 32958]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [32853 33101])
+            ("cint_fp_field_src_addr3_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33147 33166])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33167 33197])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33198 33208]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [33103 33351])
+            ("cint_fp_field_dest3_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33393 33412])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33413 33443])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33444 33454]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [33353 33593])
+            ("cint_fp_field_type3_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33635 33654])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33655 33685])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33686 33696]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [33595 33835])
+            ("cint_fp_field_cbid3_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33877 33896])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33897 33927])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33928 33938]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [33837 34077])
+            ("cint_roll_call_status_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34121 34140])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34141 34171])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34172 34182]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [34079 34323])
+            ("cint_ping_call_src_one_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34368 34387])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34388 34418])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34419 34429]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [34325 34571])
+            ("cint_ping_call_src_two_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34616 34635])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34636 34666])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34667 34677]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [34573 34819])
+            ("cint_ping_call_dst_one_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34864 34883])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34884 34914])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34915 34925]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [34821 35067])
+            ("cint_ping_call_dst_two_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35112 35131])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35132 35162])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35163 35173]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [35069 35315])
+            ("cint_msg_call_src_one_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35359 35378])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35379 35409])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35410 35420]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [35317 35561])
+            ("cint_msg_call_src_two_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35605 35624])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35625 35655])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35656 35666]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [35563 35807])
+            ("cint_bytes_tx_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35844 35863])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35864 35894])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35895 35911])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35912 35923]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [35809 36153])
+            ("cint_emu_ctrl_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36190 36209])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36210 36240])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [36241 36257])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36258 36269]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [36155 36499])
+            ("cint_bus_stats_intg_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36542 36561])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36562 36592])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [36593 36609])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36610 36621]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [36501 36857])
+            ("cint_fp_ctrl_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36893 36912])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36913 36943])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [36944 36960])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36961 36972]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [36859 37201])
+            ("cint_fp_field_len1_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37242 37261])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37262 37292])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37293 37309])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37310 37321]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [37202 37556])
+            ("cint_fp_field_flags_high1_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37604 37623])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37624 37654])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37655 37671])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37672 37683]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [37557 37925])
+            ("cint_fp_field_flags_low1_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37972 37991])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37992 38022])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38023 38039])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38040 38051]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [37926 38292])
+            ("cint_fp_field_priority1_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38338 38357])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38358 38388])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38389 38405])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38406 38417]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [38293 38657])
+            ("cint_fp_field_src_addr1_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38703 38722])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38723 38753])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38754 38770])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38771 38782]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [38658 39022])
+            ("cint_fp_field_dest1_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39064 39083])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39084 39114])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39115 39131])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39132 39143]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [39023 39379])
+            ("cint_fp_field_type1_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39421 39440])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39441 39471])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39472 39488])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39489 39500]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [39380 39736])
+            ("cint_fp_field_cbid1_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39778 39797])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39798 39828])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39829 39845])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39846 39857]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [39737 40093])
+            ("cint_fp_field_len2_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40135 40154])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40155 40185])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40186 40202])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40203 40214]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [40095 40449])
+            ("cint_fp_field_flags_high2_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40497 40516])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40517 40547])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40548 40564])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40565 40576]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [40450 40818])
+            ("cint_fp_field_flags_low2_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40865 40884])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40885 40915])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40916 40932])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40933 40944]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [40819 41185])
+            ("cint_fp_field_priority2_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41231 41250])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41251 41281])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41282 41298])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41299 41310]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [41186 41550])
+            ("cint_fp_field_src_addr2_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41596 41615])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41616 41646])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41647 41663])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41664 41675]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [41551 41915])
+            ("cint_fp_field_dest2_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41957 41976])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41977 42007])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42008 42024])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42025 42036]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [41916 42272])
+            ("cint_fp_field_type2_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42314 42333])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42334 42364])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42365 42381])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42382 42393]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [42273 42629])
+            ("cint_fp_field_cbid2_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42671 42690])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42691 42721])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42722 42738])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42739 42750]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [42630 42986])
+            ("cint_fp_field_len3_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43028 43047])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43048 43078])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43079 43095])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43096 43107]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [42988 43342])
+            ("cint_fp_field_flags_high3_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43390 43409])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43410 43440])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43441 43457])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43458 43469]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [43343 43711])
+            ("cint_fp_field_flags_low3_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43758 43777])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43778 43808])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43809 43825])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43826 43837]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [43712 44078])
+            ("cint_fp_field_priority3_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44124 44143])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44144 44174])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [44175 44191])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44192 44203]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [44079 44443])
+            ("cint_fp_field_src_addr3_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44489 44508])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44509 44539])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [44540 44556])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44557 44568]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [44444 44808])
+            ("cint_fp_field_dest3_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44850 44869])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44870 44900])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [44901 44917])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44918 44929]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [44809 45165])
+            ("cint_fp_field_type3_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45207 45226])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45227 45257])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [45258 45274])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45275 45286]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [45166 45522])
+            ("cint_fp_field_cbid3_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45564 45583])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45584 45614])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [45615 45631])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45632 45643]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [45523 45879])
+            ("dmvr_id_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45909 45928])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45929 45959])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [45960 45970]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [45881 46097])
+            ("dmvr_cntrl_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [46130 46149])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [46150 46180])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46181 46191]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [46099 46321])
+            ("dmvr_cntrl_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [46355 46374])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [46375 46405])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46406 46422])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46423 46434]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [46323 46661])
+            ("dmvr_s2mm_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [46693 46712])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [46713 46743])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46744 46754]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [46663 46883])
+            ("dmvr_s2mm_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [46916 46935])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [46936 46966])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46967 46983])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46984 46995]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [46885 47221])
+            ("dmvr_mm2s_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47253 47272])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47273 47303])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [47304 47314]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [47223 47443])
+            ("dmvr_mm2s_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47476 47495])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47496 47526])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [47527 47543])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47544 47555]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [47445 47781])
+            ("dmvr_buf_info_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47817 47836])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47837 47867])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [47868 47878]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [47783 48011])
+            ("dmvr_buf_info_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [48048 48067])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [48068 48098])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48099 48115])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48116 48127]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [48013 48357])
+            ("dmvr_buf_ls_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [48391 48410])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [48411 48441])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48442 48452]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [48359 48583])
+            ("dmvr_buf_ms_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [48617 48636])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [48637 48667])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48668 48678]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [48585 48809])
+            ("dmvr_test_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [48841 48860])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [48861 48891])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48892 48902]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [48811 49031])
+            ("dmvr_buff0_addr_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49069 49088])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49089 49119])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [49120 49130]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [49033 49265])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("gint_rev" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49289 49298]))                  
+                :type "int")
+                nil [49267 49299])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("gint_cntrl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49322 49333]))                  
+                :type "int")
+                nil [49300 49334])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("gint_ier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49357 49366]))                  
+                :type "int")
+                nil [49335 49367])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("gint_isr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49390 49399]))                  
+                :type "int")
+                nil [49368 49400])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_testpat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49424 49437]))                  
+                :type "int")
+                nil [49402 49438])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_cap_ctrl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49461 49475]))                  
+                :type "int")
+                nil [49439 49476])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_cap_sta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49499 49512]))                  
+                :type "int")
+                nil [49477 49513])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_timeout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49536 49549]))                  
+                :type "int")
+                nil [49514 49550])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_delay_val" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49573 49588]))                  
+                :type "int")
+                nil [49551 49589])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_bytes_tx" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49612 49626]))                  
+                :type "int")
+                nil [49590 49627])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_emu_ctrl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49650 49664]))                  
+                :type "int")
+                nil [49628 49665])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_bus_stats_xfer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49688 49708]))                  
+                :type "int")
+                nil [49666 49709])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_bus_stats_byte" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49732 49752]))                  
+                :type "int")
+                nil [49710 49753])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_bus_stats_intg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49776 49796]))                  
+                :type "int")
+                nil [49754 49797])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_bus_stats_xmax" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49820 49840]))                  
+                :type "int")
+                nil [49798 49841])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_bus_stats_bmax" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49864 49884]))                  
+                :type "int")
+                nil [49842 49885])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_bus_slot_id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49908 49925]))                  
+                :type "int")
+                nil [49886 49926])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_ctrl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49950 49963]))                  
+                :type "int")
+                nil [49928 49964])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_len1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49987 50006]))                  
+                :type "int")
+                nil [49965 50007])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_flags_high1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50030 50056]))                  
+                :type "int")
+                nil [50008 50057])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_flags_low1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50080 50105]))                  
+                :type "int")
+                nil [50058 50106])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_priority1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50129 50153]))                  
+                :type "int")
+                nil [50107 50154])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_src_addr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50177 50201]))                  
+                :type "int")
+                nil [50155 50202])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_dest1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50225 50245]))                  
+                :type "int")
+                nil [50203 50246])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_type1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50269 50289]))                  
+                :type "int")
+                nil [50247 50290])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_cbid1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50313 50333]))                  
+                :type "int")
+                nil [50291 50334])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_len2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50358 50377]))                  
+                :type "int")
+                nil [50336 50378])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_flags_high2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50401 50427]))                  
+                :type "int")
+                nil [50379 50428])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_flags_low2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50451 50476]))                  
+                :type "int")
+                nil [50429 50477])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_priority2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50500 50524]))                  
+                :type "int")
+                nil [50478 50525])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_src_addr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50548 50572]))                  
+                :type "int")
+                nil [50526 50573])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_dest2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50596 50616]))                  
+                :type "int")
+                nil [50574 50617])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_type2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50640 50660]))                  
+                :type "int")
+                nil [50618 50661])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_cbid2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50684 50704]))                  
+                :type "int")
+                nil [50662 50705])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_len3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50729 50748]))                  
+                :type "int")
+                nil [50707 50749])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_flags_high3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50772 50798]))                  
+                :type "int")
+                nil [50750 50799])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_flags_low3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50822 50847]))                  
+                :type "int")
+                nil [50800 50848])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_priority3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50871 50895]))                  
+                :type "int")
+                nil [50849 50896])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_src_addr3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50919 50943]))                  
+                :type "int")
+                nil [50897 50944])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_dest3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50967 50987]))                  
+                :type "int")
+                nil [50945 50988])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_type3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51011 51031]))                  
+                :type "int")
+                nil [50989 51032])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_fp_field_cbid3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51055 51075]))                  
+                :type "int")
+                nil [51033 51076])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_roll_call_status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51100 51122]))                  
+                :type "int")
+                nil [51078 51123])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_ping_call_src_one" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51146 51169]))                  
+                :type "int")
+                nil [51124 51170])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_ping_call_src_two" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51193 51216]))                  
+                :type "int")
+                nil [51171 51217])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_ping_call_dst_one" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51240 51263]))                  
+                :type "int")
+                nil [51218 51264])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_ping_call_dst_two" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51287 51310]))                  
+                :type "int")
+                nil [51265 51311])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_msg_call_src_one" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51334 51356]))                  
+                :type "int")
+                nil [51312 51357])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cint_msg_call_src_two" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51380 51402]))                  
+                :type "int")
+                nil [51358 51403])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("dmvr_id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51427 51435]))                  
+                :type "int")
+                nil [51405 51436])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("dmvr_cntrl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51459 51470]))                  
+                :type "int")
+                nil [51437 51471])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("dmvr_s2mm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51494 51504]))                  
+                :type "int")
+                nil [51472 51505])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("dmvr_mm2s" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51528 51538]))                  
+                :type "int")
+                nil [51506 51539])
+            ("DEVICE_ATTR_RW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("dmvr_buf_info" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51562 51576]))                  
+                :type "int")
+                nil [51540 51577])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("dmvr_buf_ls" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51600 51612]))                  
+                :type "int")
+                nil [51578 51613])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("dmvr_buf_ms" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51636 51648]))                  
+                :type "int")
+                nil [51614 51649])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("dmvr_test" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51672 51682]))                  
+                :type "int")
+                nil [51650 51683])
+            ("DEVICE_ATTR_RO" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("dmvr_buff0_addr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51706 51722]))                  
+                :type "int")
+                nil [51684 51723])
+            ("xfpga_dev_attrs" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("attribute" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [51725 53885])
+            ("xfpga_dev_group" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("attribute_group" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [53887 53973])
+            ("xfpga_drv_probe" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pdev" variable
+                       (:pointer 1
+                        :type ("platform_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [54238 54267]))                  
+                :type "int")
+                nil [54211 60013])
+            ("xfpga_drv_remove" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pdev" variable
+                       (:pointer 1
+                        :type ("platform_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [60245 60274]))                  
+                :type "int")
+                nil [60217 61071])
+            ("xfpga_of_match" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("of_device_id" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [61073 61192])
+            ("MODULE_DEVICE_TABLE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("of" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61213 61216])
+                    ("" variable (:type ("xfpga_of_match" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61217 61232]))                  
+                :type "int")
+                nil [61193 61233])
+            ("xfpga_platform_driver" variable
+               (:typemodifiers ("static")
+                :type ("platform_driver" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [61258 61482])
+            ("module_platform_driver" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("xfpga_platform_driver" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61507 61529]))                  
+                :type "int")
+                nil [61484 61530])
+            ("MODULE_AUTHOR" function
+               (:prototype-flag t
+                :type "int")
+                nil [61532 61561])
+            ("MODULE_DESCRIPTION" function
+               (:prototype-flag t
+                :type "int")
+                nil [61562 61603])
+            ("MODULE_LICENSE" function
+               (:prototype-flag t
+                :type "int")
+                nil [61604 61626]))          
+    :file "xilinx_fpga.c"
+    :pointmax 61555
+    :fsize 61626
+    :lastmodtime '(22033 49977 324464 355000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NUM_KERNEL_BUFS" . ((semantic-list "(64)" 1095 . 1099)))
+          ("GINT_REV" . ((semantic-list "(drvdata->gint_baddress + 0x00)" 1181 . 1212)))
+          ("CINT_TESTPAT" . ((semantic-list "(drvdata->cint_baddress + 0x00)" 1452 . 1483)))
+          ("CINT_BUS_SLOT_ID" . ((semantic-list "(drvdata->cint_baddress + 0x30)" 2246 . 2277)))
+          ("CINT_FP_FIELD_FLAGS_HIGH1" . ((semantic-list "(drvdata->cint_baddress + 0x3C)" 2468 . 2499)))
+          ("DMVR_BUF_MS" . ((semantic-list "(drvdata->dmvr_baddress + 0x18)" 4872 . 4903)))
+          ("DMVR_TEST" . ((semantic-list "(drvdata->dmvr_baddress + 0x1C)" 4930 . 4961)))
+          ("CINT_CAP_STA" . ((semantic-list "(drvdata->cint_baddress + 0x08)" 1584 . 1615)))
+          ("CINT_BUS_STATS_XMAX" . ((semantic-list "(drvdata->cint_baddress + 0x28)" 2114 . 2145)))
+          ("CINT_FP_CTRL" . ((semantic-list "(drvdata->cint_baddress + 0x34)" 2333 . 2364)))
+          ("CINT_FP_FIELD_FLAGS_HIGH2" . ((semantic-list "(drvdata->cint_baddress + 0x5C)" 3005 . 3036)))
+          ("CINT_ROLL_CALL_STATUS" . ((semantic-list "(drvdata->cint_baddress + 0x98)" 4044 . 4075)))
+          ("CINT_MSG_CALL_SRC_TWO" . ((semantic-list "(drvdata->cint_baddress + 0xB0)" 4442 . 4473)))
+          ("CINT_TIMEOUT" . ((semantic-list "(drvdata->cint_baddress + 0x0C)" 1650 . 1681)))
+          ("CINT_FP_FIELD_LEN1" . ((semantic-list "(drvdata->cint_baddress + 0x38)" 2401 . 2432)))
+          ("CINT_FP_FIELD_SRC_ADDR1" . ((semantic-list "(drvdata->cint_baddress + 0x48)" 2669 . 2700)))
+          ("CINT_FP_FIELD_TYPE1" . ((semantic-list "(drvdata->cint_baddress + 0x50)" 2803 . 2834)))
+          ("CINT_FP_FIELD_FLAGS_HIGH3" . ((semantic-list "(drvdata->cint_baddress + 0x7C)" 3542 . 3573)))
+          ("CINT_PING_CALL_SRC_TWO" . ((semantic-list "(drvdata->cint_baddress + 0xA0)" 4177 . 4208)))
+          ("XFPGA_DEVICES" . ((semantic-list "(1)" 904 . 907)))
+          ("CINT_FP_FIELD_LEN2" . ((semantic-list "(drvdata->cint_baddress + 0x58)" 2938 . 2969)))
+          ("CINT_FP_FIELD_SRC_ADDR2" . ((semantic-list "(drvdata->cint_baddress + 0x68)" 3206 . 3237)))
+          ("CINT_FP_FIELD_TYPE2" . ((semantic-list "(drvdata->cint_baddress + 0x70)" 3340 . 3371)))
+          ("CINT_FP_FIELD_FLAGS_LOW1" . ((semantic-list "(drvdata->cint_baddress + 0x40)" 2535 . 2566)))
+          ("CINT_FP_FIELD_LEN3" . ((semantic-list "(drvdata->cint_baddress + 0x78)" 3475 . 3506)))
+          ("CINT_FP_FIELD_SRC_ADDR3" . ((semantic-list "(drvdata->cint_baddress + 0x88)" 3743 . 3774)))
+          ("CINT_FP_FIELD_TYPE3" . ((semantic-list "(drvdata->cint_baddress + 0x90)" 3877 . 3908)))
+          ("CINT_PING_CALL_DST_ONE" . ((semantic-list "(drvdata->cint_baddress + 0xA4)" 4243 . 4274)))
+          ("DMVR_MM2S" . ((semantic-list "(drvdata->dmvr_baddress + 0x0C)" 4698 . 4729)))
+          ("CINT_BYTES_TX" . ((semantic-list "(drvdata->cint_baddress + 0x14)" 1782 . 1813)))
+          ("CINT_BUS_STATS_BMAX" . ((semantic-list "(drvdata->cint_baddress + 0x2C)" 2180 . 2211)))
+          ("CINT_FP_FIELD_CBID1" . ((semantic-list "(drvdata->cint_baddress + 0x54)" 2870 . 2901)))
+          ("CINT_FP_FIELD_FLAGS_LOW2" . ((semantic-list "(drvdata->cint_baddress + 0x60)" 3072 . 3103)))
+          ("DRIVER_NAME" . ((string "\"xfpga\"" 874 . 881)))
+          ("GINT_IER" . ((semantic-list "(drvdata->gint_baddress + 0x08)" 1297 . 1328)))
+          ("CINT_FP_FIELD_PRIORITY1" . ((semantic-list "(drvdata->cint_baddress + 0x44)" 2602 . 2633)))
+          ("CINT_FP_FIELD_DEST1" . ((semantic-list "(drvdata->cint_baddress + 0x4C)" 2736 . 2767)))
+          ("CINT_FP_FIELD_CBID2" . ((semantic-list "(drvdata->cint_baddress + 0x74)" 3407 . 3438)))
+          ("CINT_FP_FIELD_FLAGS_LOW3" . ((semantic-list "(drvdata->cint_baddress + 0x80)" 3609 . 3640)))
+          ("DMVR_BUF_INFO" . ((semantic-list "(drvdata->dmvr_baddress + 0x10)" 4756 . 4787)))
+          ("CINT_FP_FIELD_PRIORITY2" . ((semantic-list "(drvdata->cint_baddress + 0x64)" 3139 . 3170)))
+          ("CINT_FP_FIELD_DEST2" . ((semantic-list "(drvdata->cint_baddress + 0x6C)" 3273 . 3304)))
+          ("CINT_FP_FIELD_CBID3" . ((semantic-list "(drvdata->cint_baddress + 0x94)" 3944 . 3975)))
+          ("DMVR_ID" . ((semantic-list "(drvdata->dmvr_baddress + 0x00)" 4524 . 4555)))
+          ("GINT_CNTRL" . ((semantic-list "(drvdata->gint_baddress + 0x04)" 1239 . 1270)))
+          ("CINT_EMU_CTRL" . ((semantic-list "(drvdata->cint_baddress + 0x18)" 1849 . 1880)))
+          ("CINT_BUS_STATS_BYTE" . ((semantic-list "(drvdata->cint_baddress + 0x20)" 1982 . 2013)))
+          ("CINT_FP_FIELD_PRIORITY3" . ((semantic-list "(drvdata->cint_baddress + 0x84)" 3676 . 3707)))
+          ("CINT_FP_FIELD_DEST3" . ((semantic-list "(drvdata->cint_baddress + 0x8C)" 3810 . 3841)))
+          ("CINT_PING_CALL_DST_TWO" . ((semantic-list "(drvdata->cint_baddress + 0xA8)" 4309 . 4340)))
+          ("xfpga_readreg" (spp-arg-list ("offset") 6270 . 6278) . ((symbol "readl" 6281 . 6286) (semantic-list "(offset)" 6286 . 6294)))
+          ("GINT_ISR" . ((semantic-list "(drvdata->gint_baddress + 0x0C)" 1355 . 1386)))
+          ("CINT_BUS_STATS_XFER" . ((semantic-list "(drvdata->cint_baddress + 0x1C)" 1916 . 1947)))
+          ("CINT_BUS_STATS_INTG" . ((semantic-list "(drvdata->cint_baddress + 0x24)" 2048 . 2079)))
+          ("xfpga_writereg" (spp-arg-list ("offset" "val") 6215 . 6228) . ((symbol "writel" 6229 . 6235) (semantic-list "(val, offset)" 6235 . 6248)))
+          ("CINT_CAP_CTRL" . ((semantic-list "(drvdata->cint_baddress + 0x04)" 1518 . 1549)))
+          ("CINT_MSG_CALL_SRC_ONE" . ((semantic-list "(drvdata->cint_baddress + 0xAC)" 4376 . 4407)))
+          ("DMVR_BUF_LS" . ((semantic-list "(drvdata->dmvr_baddress + 0x14)" 4814 . 4845)))
+          ("CINT_DELAY_VAL" . ((semantic-list "(drvdata->cint_baddress + 0x10)" 1716 . 1747)))
+          ("CINT_PING_CALL_SRC_ONE" . ((semantic-list "(drvdata->cint_baddress + 0x9C)" 4111 . 4142)))
+          ("DMVR_CNTRL" . ((semantic-list "(drvdata->dmvr_baddress + 0x04)" 4582 . 4613)))
+          ("DMVR_S2MM" . ((semantic-list "(drvdata->dmvr_baddress + 0x08)" 4640 . 4671)))
+          ("DMVR_BUFF0_ADDR" . ((semantic-list "(drvdata->dmvr_baddress + 0x20)" 4988 . 5019)))
+          )
+
+    )
+   )
+  :file "!home!making!Develop!weaselboard!weaselboard-zynq!apps!kmod!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

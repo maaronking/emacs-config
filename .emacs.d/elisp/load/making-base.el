@@ -55,6 +55,7 @@
 
 ; show the git gutter
 (require 'git-gutter-fringe)
+(global-git-gutter-mode t)
 
 ; show column-number in the mode line
 (column-number-mode 1)

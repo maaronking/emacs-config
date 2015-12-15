@@ -1,0 +1,41 @@
+;; Object tmp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tmp/"
+  :tables (list 
+   (semanticdb-table "zeromq-server.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("zmq.hpp" include (:system-flag t) nil [128 146])
+            ("string" include (:system-flag t) nil [147 164])
+            ("iostream" include (:system-flag t) nil [165 184])
+            ("unistd.h" include (:system-flag t) nil [200 219])
+            ("main" function (:type "int") nil [285 854]))          
+    :file "zeromq-server.cpp"
+    :pointmax 856
+    :fsize 855
+    :lastmodtime '(22026 16914 209767 735000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "zeromq-server.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("zmq.h" include (:system-flag t) nil [26 42])
+            ("string.h" include (:system-flag t) nil [43 62])
+            ("stdio.h" include (:system-flag t) nil [63 81])
+            ("unistd.h" include (:system-flag t) nil [82 101])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [113 118]))                  
+                :type "int")
+                nil [103 700]))          
+    :file "zeromq-server.c"
+    :pointmax 701
+    :fsize 704
+    :lastmodtime '(22029 58958 435023 875000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!making!Develop!tmp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

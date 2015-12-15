@@ -1,0 +1,154 @@
+;; Object traffic-analysis/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "traffic-analysis/"
+  :tables (list 
+   (semanticdb-table "weaselboard-main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("signal.h" include (:system-flag t) nil [276 295])
+            ("cstdint" include (:system-flag t) nil [316 334])
+            ("iostream" include (:system-flag t) nil [335 354])
+            ("bsp.hpp" include (:system-flag t) nil [374 392])
+            ("qp_port.h" include (:system-flag t) nil [393 413])
+            ("weaselboard/utils/logging.hpp" include (:system-flag t) nil [442 482])
+            ("drivers/posix/data-capture.hpp" include (:system-flag t) nil [483 524])
+            ("weaselboard/analyzer/actions.hpp" include (:system-flag t) nil [525 568])
+            ("weaselboard/config/ruleset-map.hpp" include (:system-flag t) nil [569 614])
+            ("weaselboard/analyzer/streaming.hpp" include (:system-flag t) nil [615 660])
+            ("weaselboard/analyzer/analysis-aos.hpp" include (:system-flag t) nil [661 709])
+            ("weaselboard/analyzer/event-registration.hpp" include (:system-flag t) nil [710 764])
+            ("std::size_t" using (:type ("std::size_t" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [766 784])
+            ("std::uint8_t" using (:type ("std::uint8_t" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [785 804])
+            ("std::uint32_t" using (:type ("std::uint32_t" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [805 825])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [827 843])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [844 860])
+            ("WEASELBOARD_VERSION" variable (:constant-flag t) nil [870 889])
+            ("l_analysisQueueSto" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("QP::QEvt" type (:type "class") nil nil))
+                nil [916 964])
+            ("l_heartbeatQueueSto" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("QP::QEvt" type (:type "class") nil nil))
+                nil [965 1014])
+            ("l_streamingQueueSto" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("QP::QEvt" type (:type "class") nil nil))
+                nil [1015 1064])
+            ("l_internal_overflowQueueSto" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("QP::QEvt" type (:type "class") nil nil))
+                nil [1065 1121])
+            ("l_weaselboard_startQueueSto" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("QP::QEvt" type (:type "class") nil nil))
+                nil [1122 1178])
+            ("l_ioQueueSto" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("QP::QEvt" type (:type "class") nil nil))
+                nil [1210 1254])
+            ("l_logic_updateQueueSto" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("QP::QEvt" type (:type "class") nil nil))
+                nil [1255 1306])
+            ("l_firmware_updateQueueSto" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("QP::QEvt" type (:type "class") nil nil))
+                nil [1307 1361])
+            ("l_set_attr_listQueueSto" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("QP::QEvt" type (:type "class") nil nil))
+                nil [1362 1414])
+            ("l_subscrSto" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("QP::QSubscrList" type (:type "class") nil nil))
+                nil [1482 1525])
+            ("l_PoolSto" variable
+               (:dereference 1
+                :type "int")
+                nil [1593 1611])
+            ("weaselboard" type
+               (:members 
+                  ( ("capture_driver" variable (:type ("driver::data_capture" type
+                         (:template-specifier 
+                            ( ("driver::cpolicy::ab_logix_1756" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1812 1880])
+                    ("init" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2490 2495]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2480 2496])
+                    ("system_signal_handler" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("signum" variable (:type "int") (reparse-symbol arg-sub-list) [2583 2594]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2556 2595]))                  
+                :type "namespace")
+                nil [1613 2597])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2700 2705]))                  
+                :type "int")
+                nil [2691 2923])
+            ("weaselboard" type
+               (:members 
+                  ( ("init" function (:type "void") (reparse-symbol namespacesubparts) [2951 7659])
+                    ("system_signal_handler" function
+                       (:arguments 
+                          ( ("signum" variable (:type "int") (reparse-symbol arg-sub-list) [7690 7701]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7663 7971]))                  
+                :type "namespace")
+                nil [2925 7973]))          
+    :file "weaselboard-main.cpp"
+    :pointmax 7999
+    :fsize 7998
+    :lastmodtime '(22033 44585 104689 267000)
+    :unmatched-syntax '((semantic-list 1575 . 1592) (symbol 1564 . 1575) (STATIC 1557 . 1563))
+    :lexical-table 
+        '(("WEASELBOARD_VERSION" . ((string "\"3.0\"" 890 . 895)))
+          )
+
+    )
+   )
+  :file "!home!making!Develop!weaselboard!weaselboard!applications!traffic-analysis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

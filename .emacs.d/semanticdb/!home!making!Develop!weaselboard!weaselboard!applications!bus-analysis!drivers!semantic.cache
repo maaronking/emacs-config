@@ -1,0 +1,157 @@
+;; Object drivers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "drivers/"
+  :tables (list 
+   (semanticdb-table "fpga-interface.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("thread" include (:system-flag t) nil [523 540])
+            ("stdio.h" include (:system-flag t) nil [541 559])
+            ("cstdint" include (:system-flag t) nil [560 578])
+            ("iostream" include (:system-flag t) nil [579 598])
+            ("functional" include (:system-flag t) nil [599 620])
+            ("zmq.hpp" include (:system-flag t) nil [641 659])
+            ("weaselboard/config/config.hpp" include (:system-flag t) nil [688 728])
+            ("drivers/fpga-iface-policies.hpp" include (:system-flag t) nil [729 771])
+            ("__WEASELBOARD_FPGA_INTERFACE_DRIVER__" variable (:constant-flag t) nil [827 864])
+            ("weaselboard" type
+               (:members 
+                  ( ("driver" type
+                       (:members 
+                          ( ("std::thread" using (:type ("std::thread" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [916 934])
+                            ("std::uint8_t" using (:type ("std::uint8_t" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [939 958])
+                            ("std::uint32_t" using (:type ("std::uint32_t" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [963 983])
+                            ("fpga_iface" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1344 1351])
+                                    ("fpga_iface" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("context" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1369 1390]))                                          
+                                        :type ("fpga_iface" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1358 1630])
+                                    ("start" function
+                                       (:arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1703 1708]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1692 2058])
+                                    ("stop" function
+                                       (:arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2127 2132]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2117 2236])
+                                    ("retrieve" function
+                                       (:arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2350 2356]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2335 2896])
+                                    ("private" label nil (reparse-symbol classsubparts) [2908 2916])
+                                    ("_running_" variable (:type "bool") (reparse-symbol classsubparts) [2923 2938])
+                                    ("_iface_thread_" variable
+                                       (:pointer 1
+                                        :type ("thread" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2945 2969])
+                                    ("_iface_sys_" variable (:type ("IFACE_POLICY" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2976 3001])
+                                    ("_request_" variable (:type ("zmq::message_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3009 3034])
+                                    ("_context_" variable (:type ("zmq::context_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3041 3066])
+                                    ("_socket_" variable (:type ("zmq::socket_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3073 3096]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1321 3103]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [892 3108]))                  
+                :type "namespace")
+                nil [866 3130]))          
+    :file "fpga-interface.hpp"
+    :pointmax 3210
+    :fsize 3209
+    :lastmodtime '(22033 44584 932689 274000)
+    :unmatched-syntax '((thing 1315 . 1316) (thing 1292 . 1315) (thing 1291 . 1292) (thing 1290 . 1291) (thing 1282 . 1290) (thing 1280 . 1281) (thing 1267 . 1279) (thing 1258 . 1266) (thing 1257 . 1258) (thing 1248 . 1256))
+    :lexical-table 
+        '(("__WEASELBOARD_FPGA_INTERFACE_DRIVER__")
+          )
+
+    )
+   (semanticdb-table "fpga-iface-policies.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("chrono" include (:system-flag t) nil [428 445])
+            ("thread" include (:system-flag t) nil [446 463])
+            ("vector" include (:system-flag t) nil [464 481])
+            ("fstream" include (:system-flag t) nil [482 500])
+            ("cstdint" include (:system-flag t) nil [501 519])
+            ("cstdlib" include (:system-flag t) nil [520 538])
+            ("stdlib.h" include (:system-flag t) nil [562 581])
+            ("stdio.h" include (:system-flag t) nil [582 600])
+            ("string.h" include (:system-flag t) nil [601 620])
+            ("fcntl.h" include (:system-flag t) nil [621 639])
+            ("unistd.h" include (:system-flag t) nil [640 659])
+            ("__WEASELBOARD_FPGA_INTERFACE_POLICIES_HPP__" variable (:constant-flag t) nil [721 764])
+            ("weaselboard" type
+               (:members 
+                  ( ("driver" type
+                       (:members 
+                          ( ("ifpolicy" type
+                               (:members 
+                                  ( ("std::vector" using (:type ("std::vector" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [843 861])
+                                    ("std::uint8_t" using (:type ("std::uint8_t" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [868 887])
+                                    ("ab_logix_1756_roll_call" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1009 1016])
+                                            ("ab_logix_1756_roll_call" function
+                                               (:constructor-flag t
+                                                :type ("ab_logix_1756_roll_call" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1025 1246])
+                                            ("ab_logix_1756_roll_call" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1256 1297])
+                                            ("apply" function
+                                               (:arguments 
+                                                  ( ("buf" variable
+                                                       (:pointer 1
+                                                        :type ("uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1320 1334]))                                                  
+                                                :type ("size_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1307 1479])
+                                            ("private" label nil (reparse-symbol classsubparts) [1679 1687])
+                                            ("fd" variable (:type "int") (reparse-symbol classsubparts) [1696 1703])
+                                            ("cint_cap_ctrl" variable (:type "int") (reparse-symbol classsubparts) [1785 1803])
+                                            ("interface_active" variable (:type "bool") (reparse-symbol classsubparts) [1890 1912]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [971 1921]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [815 1928]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [792 1953]))                  
+                :type "namespace")
+                nil [766 1975]))          
+    :file "fpga-iface-policies.hpp"
+    :pointmax 2059
+    :fsize 2058
+    :lastmodtime '(22033 44584 932689 274000)
+    :unmatched-syntax '((punctuation 1670 . 1671) (DELETE 1664 . 1670) (punctuation 1662 . 1663) (semantic-list 1628 . 1661) (punctuation 1627 . 1628) (OPERATOR 1619 . 1627) (punctuation 1617 . 1618) (symbol 1594 . 1617) (punctuation 1584 . 1585) (DELETE 1578 . 1584) (punctuation 1576 . 1577) (semantic-list 1542 . 1575) (symbol 1519 . 1542))
+    :lexical-table 
+        '(("__WEASELBOARD_FPGA_INTERFACE_POLICIES_HPP__")
+          )
+
+    )
+   )
+  :file "!home!making!Develop!weaselboard!weaselboard!applications!bus-analysis!drivers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
