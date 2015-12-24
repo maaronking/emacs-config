@@ -107,24 +107,39 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(circe-network-options (quote (("DuranDuran" :host "durandu.ran.sandia.gov" :port 6667 :channels ("#sandia" "#weasel")))))
+ '(circe-network-options
+   (quote
+    (("DuranDuran" :host "durandu.ran.sandia.gov" :port 6667 :channels
+      ("#sandia" "#weasel")))))
  '(column-number-mode t)
  '(compilation-scroll-output t)
  '(cua-mode t nil (cua-base))
  '(custom-enabled-themes (quote (wombat)))
  '(display-time-mode t)
  '(ecb-compile-window-height 6)
- '(ecb-layout-window-sizes (quote (("dev-layout" (ecb-directories-buffer-name 0.15 . 0.5492957746478874) (ecb-methods-buffer-name 0.15 . 0.43661971830985913)))))
+ '(ecb-layout-window-sizes
+   (quote
+    (("dev-layout"
+      (ecb-directories-buffer-name 0.15 . 0.5492957746478874)
+      (ecb-methods-buffer-name 0.15 . 0.43661971830985913)))))
  '(ecb-options-version "2.40")
  '(ecb-primary-secondary-mouse-buttons (quote mouse-1--C-mouse-1))
  '(ecb-show-sources-in-directories-buffer (quote ("left7" "left13" "left14" "left15" "dev-layout")))
- '(ecb-source-path (quote (("/" "/") "/home/making" "/home/making/Dev" "/home/making/bro-code" "/home/making/weaselboard" "/home/making/ccss-protocols")))
+ '(ecb-source-path
+   (quote
+    (("/" "/")
+     "/home/making" "/home/making/Dev" "/home/making/bro-code" "/home/making/weaselboard" "/home/making/ccss-protocols")))
  '(ecb-tip-of-the-day nil)
  '(fill-column 80)
  '(global-linum-mode nil)
- '(gnus-demon-handlers (quote ((gnus-demon-scan-mail 1 nil) (gnus-demon-scan-and-update 1 nil))))
+ '(gnus-demon-handlers
+   (quote
+    ((gnus-demon-scan-mail 1 nil)
+     (gnus-demon-scan-and-update 1 nil))))
  '(line-number-mode nil)
- '(linum-disabled-modes-list (quote (eshell-mode wl-summary-mode compilation-mode org-mode text-mode dired-mode neotree-mode)))
+ '(linum-disabled-modes-list
+   (quote
+    (eshell-mode wl-summary-mode compilation-mode org-mode text-mode dired-mode neotree-mode)))
  '(minimap-always-recenter nil)
  '(minimap-dedicated-window nil)
  '(minimap-display-semantic-overlays t)
@@ -138,11 +153,21 @@
  '(neo-cwd-line-style (quote text))
  '(neo-smart-open t)
  '(neo-theme (quote ascii))
- '(org-agenda-files (quote ("~/org-files/mobile-org/notes.org" "~/org-files/mobile-org/agenda.org")))
- '(org-babel-load-languages (quote ((emacs-lisp . t) (C . t) (haskell . t) (python . t))))
+ '(neo-window-fixed-size nil)
+ '(org-agenda-files
+   (quote
+    ("~/org-files/mobile-org/notes.org" "~/org-files/mobile-org/agenda.org")))
+ '(org-babel-load-languages
+   (quote
+    ((emacs-lisp . t)
+     (C . t)
+     (haskell . t)
+     (python . t))))
  '(semantic-c-dependency-system-include-path (quote ("/usr/include" "/usr/lib" "/usr/include/boost")))
  '(show-paren-mode t)
- '(tab-stop-list (quote (4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80)))
+ '(tab-stop-list
+   (quote
+    (4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80)))
  '(term-default-bg-color "#000000")
  '(term-default-fg-color "#4E9A06"))
 (custom-set-faces
