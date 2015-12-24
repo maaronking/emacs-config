@@ -1,0 +1,6 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=emacs client
+Exec=emacsclient -c -e "(about-emacs)"
+Icon=/home/making/Pictures/emacs-client.png
