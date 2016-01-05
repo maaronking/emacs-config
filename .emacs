@@ -118,7 +118,7 @@
  '(ecb-options-version "2.40")
  '(ecb-primary-secondary-mouse-buttons (quote mouse-1--C-mouse-1))
  '(ecb-show-sources-in-directories-buffer (quote ("left7" "left13" "left14" "left15" "dev-layout")))
- '(ecb-source-path (quote (("/" "/") "/home/making" "/home/making/Dev" "/home/making/bro-code" "/home/making/weaselboard" "/home/making/ccss-protocols")))
+ '(ecb-source-path (quote (("/" "/") "/home/making" "/home/making/Develp" "/home/making/bro-code" "/home/making/weaselboard" "/home/making/ccss-protocols")))
  '(ecb-tip-of-the-day nil)
  '(fill-column 80)
  '(global-linum-mode nil)
