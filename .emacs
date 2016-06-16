@@ -46,38 +46,23 @@
 ; load cedet
 (load "load/making-cedet.el")
 
-; enable cmake-mode
-(load "load/making-cmake.el")
-
 ; configure dired
 (load "load/making-dired.el")
 
-; enable doxymacs-mode
-(load "load/making-doxymacs.el")
+; load fill-column-indicator mode
+(load "load/making-fcimode.el")
 
 ; enable ibuffer buffer menu
 (load "load/making-ibuffer.el")
 
-; enable org mode
-(load "load/making-org.el")
-
 ; enable neotree
 (load "load/making-neotree.el")
-
-; enable flymake mode
-(load "load/making-flymake.el")
 
 ; enable dark room mode
 (load "load/making-darkroom.el")
 
-; load shell scripts as emacs commands
-(load "load/making-scripts.el")
-
 ; load fic mode
 (load "load/making-fic.el")
-
-; load xml parse
-(load "load/making-xmlparse.el")
 
 ; load valgrind functions
 (load "load/making-valgrind.el")
@@ -91,92 +76,20 @@
 ; load speedbar configuration
 (load "load/making-speedbar.el")
 
-(add-hook 'c-mode-common-hook
-          (lambda ()
-            (if (derived-mode-p 'c-mode 'c++-mode)
-                (cppcm-reload-all)
-              )))
-;; OPTIONAL, avoid typing full path when starting gdb
-(global-set-key (kbd "C-c C-g")
- '(lambda ()(interactive) (gud-gdb (concat "gdb --fullname " (cppcm-get-exe-path-current-buffer)))))
-
-(global-set-key (kbd "C-x c") 'compile)
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(circe-network-options
-   (quote
-    (("DuranDuran" :host "durandu.ran.sandia.gov" :port 6667 :channels
-      ("#sandia" "#weasel")))))
- '(column-number-mode t)
- '(compilation-scroll-output t)
- '(cua-mode t nil (cua-base))
- '(custom-enabled-themes (quote (wombat)))
- '(display-time-mode t)
- '(ecb-compile-window-height 6)
- '(ecb-layout-window-sizes
-   (quote
-    (("dev-layout"
-      (ecb-directories-buffer-name 0.15 . 0.5492957746478874)
-      (ecb-methods-buffer-name 0.15 . 0.43661971830985913)))))
- '(ecb-options-version "2.40")
- '(ecb-primary-secondary-mouse-buttons (quote mouse-1--C-mouse-1))
- '(ecb-show-sources-in-directories-buffer (quote ("left7" "left13" "left14" "left15" "dev-layout")))
- '(ecb-source-path (quote (("/" "/") "/home/making" "/home/making/Develp" "/home/making/bro-code" "/home/making/weaselboard" "/home/making/ccss-protocols")))
- '(ecb-tip-of-the-day nil)
- '(fill-column 80)
- '(global-linum-mode nil)
- '(gnus-demon-handlers
-   (quote
-    ((gnus-demon-scan-mail 1 nil)
-     (gnus-demon-scan-and-update 1 nil))))
- '(line-number-mode nil)
- '(linum-disabled-modes-list
-   (quote
-    (eshell-mode wl-summary-mode compilation-mode org-mode text-mode dired-mode neotree-mode)))
- '(minimap-always-recenter nil)
- '(minimap-dedicated-window nil)
- '(minimap-display-semantic-overlays t)
- '(minimap-hide-scroll-bar nil)
- '(minimap-recenter-type (quote free))
- '(minimap-update-delay 0.8)
- '(minimap-width-fraction 0.2)
- '(minimap-window-location (quote right))
- '(neo-auto-indent-point t)
- '(neo-banner-message nil)
- '(neo-cwd-line-style (quote text))
- '(neo-smart-open t)
- '(neo-theme (quote ascii))
- '(neo-window-fixed-size nil)
- '(org-agenda-files
-   (quote
-    ("~/org-files/mobile-org/notes.org" "~/org-files/mobile-org/agenda.org")))
- '(org-babel-load-languages
-   (quote
-    ((emacs-lisp . t)
-     (C . t)
-     (haskell . t)
-     (python . t))))
- '(semantic-c-dependency-system-include-path (quote ("/usr/include" "/usr/lib" "/usr/include/boost")))
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(custom-enabled-themes (quote (misterioso)))
  '(show-paren-mode t)
- '(tab-stop-list
-   (quote
-    (4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80)))
- '(term-default-bg-color "#000000")
- '(term-default-fg-color "#4E9A06"))
+ '(tool-bar-mode nil)
+ '(tool-bar-position (quote right)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 113 :width normal :foundry "unknown" :family "DejaVu Sans Mono"))))
- '(neo-button-face ((t (:underline nil))))
- '(neo-dir-link-face ((t (:foreground "DeepSkyBlue"))))
- '(neo-expand-btn-face ((t (:foreground "SkyBlue"))))
- '(neo-file-link-face ((t (:foreground "White"))))
- '(neo-header-face ((t (:foreground "White")))))
-(put 'dired-find-alternate-file 'disabled nil)
-(put 'upcase-region 'disabled nil)
+ )

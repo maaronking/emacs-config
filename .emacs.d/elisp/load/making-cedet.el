@@ -9,8 +9,8 @@
 ;;
 ;; Don't forget to compile at the top level and in the 'contrib' directories
 
-(load-file "~/Downloads/cedet-git/cedet-devel-load.el")
-(load-file "~/Downloads/cedet-git/contrib/semantic-tag-folding.el")
+(load-file "~/Downloads/cedet/cedet-devel-load.el")
+(load-file "~/Downloads/cedet/contrib/semantic-tag-folding.el")
 
 ;; EDE Example
 ;; ;; ccss-protocols project
