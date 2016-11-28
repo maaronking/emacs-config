@@ -49,6 +49,9 @@
 ; configure dired
 (load "load/making-dired.el")
 
+; configure bm (bookmarking)
+(load "load/making-bookmark.el")
+
 ; load fill-column-indicator mode
 (load "load/making-fcimode.el")
 
@@ -76,6 +79,9 @@
 ; load speedbar configuration
 (load "load/making-speedbar.el")
 
+;load development mode
+(load "load/making-dev-mode.el")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -83,7 +89,14 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
+ '(bm-annotate-on-create t)
+ '(bm-highlight-style (quote bm-highlight-only-line))
  '(custom-enabled-themes (quote (misterioso)))
+ '(haskell-process-type (quote stack-ghci))
+ '(minimap-display-semantic-overlays nil)
+ '(minimap-recenter-type (quote relative))
+ '(minimap-window-location (quote right))
+ '(neo-theme (quote nerd))
  '(show-paren-mode t)
  '(tool-bar-mode nil)
  '(tool-bar-position (quote right)))

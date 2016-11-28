@@ -5,3 +5,6 @@
 .emacs.d/*.tar
 .emacs.d/*.gz
 .emacs.d/emacs-backups/*
+.emacs.d/semanticdb/
+.emacs.d/session*
+.emacs.d/auto-save-list/
