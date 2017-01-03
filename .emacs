@@ -97,6 +97,9 @@
  '(minimap-recenter-type (quote relative))
  '(minimap-window-location (quote right))
  '(neo-theme (quote nerd))
+ '(package-selected-packages
+   (quote
+    (tabbar-ruler sublimity sr-speedbar projectile peacock-theme org-pdfview neotree multi-term minimap magit-filenotify lua-mode linum-off ibuffer-git htmlize gnuplot-mode gnuplot git-rebase-mode git-gutter-fringe git-commit-mode git fill-column-indicator fic-mode epc ecb dired-k dired+ cpputils-cmake column-marker circe ac-haskell-process)))
  '(show-paren-mode t)
  '(tool-bar-mode nil)
  '(tool-bar-position (quote right)))
